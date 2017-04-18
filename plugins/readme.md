@@ -31,3 +31,4 @@ Some plugins were modified or created by Flying Hippo the previous developers.  
 - Tracking Script Manager
 - WP-SCSS
 - Yoast SEO
+- WP Pusher
