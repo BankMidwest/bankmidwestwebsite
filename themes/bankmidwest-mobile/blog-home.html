@@ -1,0 +1,252 @@
+<!-- WP: BEGIN header.php -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<!-- WP (replaces above line)
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+  -->
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!-- WP (replaces above line)
+    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+      -->
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+
+	<title>Site Title</title>
+    <!-- WP (replaces above line)
+	<title><?php if(is_home()) bloginfo('name'); else wp_title(''); ?></title>
+      -->
+
+	<link rel="stylesheet" type="text/css" href="../fh-starter/style.css" />
+	<link rel="shortcut icon" href="../fh-starter/favicon.ico" />
+	<!-- WP (replaces above two lines)
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
+	<?php if (function_exists('add_favicon_link')) add_favicon_link(); ?>
+      -->
+
+	<!-- WP
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php bloginfo('atom_url'); ?>" />
+      -->
+
+	<!-- WP
+	<?php wp_head(); ?>
+      -->
+</head>
+
+<body>
+	<div id="wrapper">
+
+		<div id="header">
+        	
+            <!-- Note: Make sure to just use the selector "#logo a" for the below, rather than the more specific "h1#logo a". When
+            	 it's converted to WordPress, we dynamically change the element to "div" rather than "h1" if it's an interior page,
+                 so only the ID will stay constant.  -->
+            <h1 id="logo"><a href="#"><span>SITE TITLE HERE</span></a></h1>
+            <!-- WP (replaces above line)
+        	<?php if (is_front_page()) { $headerElement = 'h1'; } else { $headerElement = 'div'; } ?>
+            <?php echo '<' . $headerElement . ' id="logo">'; ?>
+            	<a href="<?php bloginfo('url'); ?>">
+	            	<span>SITE TITLE HERE</span>
+                </a>
+	        <?php echo '</' . $headerElement . '>'; ?>
+              -->
+          
+			<!-- Uncomment if ancillary nav is needed 
+        	<ul id="ancillary">
+            	<li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul><!-- #ancillary -->
+            
+      		<ul id="nav">
+            	<!-- Be sure to change these IDs to something more descriptive - not just "link1",  "link2", etc. -->
+            	<li><a href="#" id="link1"><span>Nav Link 1</span></a></li>
+                <li><a href="#" id="link2"><span>Nav Link 2</span></a></li>
+                <li><a href="#" id="link3"><span>Nav Link 3</span></a></li>
+                <li><a href="#" id="link4"><span>Nav Link 4</span></a></li>
+            </ul><!-- #nav -->
+        
+        </div><!-- #header -->
+
+<!-- WP: END header.php -->
+
+<!-- WP: BEGIN page.php
+<?php
+/* Blog listing page template */
+
+get_header();
+?>
+  -->
+
+<div id="main">
+        
+	<div id="sidebar">
+
+		<div id="archives" class="widget">
+			<div class="widget-title">Archives</div>
+			<ul>
+				<li><a href="#" title="July 2012">July 2012</a></li>
+				<li><a href="#" title="June 2012">June 2012</a></li>
+				<li><a href="#" title="May 2012">May 2012</a></li>
+				<li><a href="#" title="April 2012">April 2012</a></li>
+			</ul>
+		</div><!-- #archives.widget -->
+
+		<div id="recent" class="widget">
+			<div class="widget-title">Recent Posts</div>
+			<ul>
+				<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+				<li><a href="#">Eu volutpat enim diam dignissim convallis est</a></li>
+				<li><a href="#">Aliquam libero nisi, imperdiet at?</a></li>
+			</ul>
+		</div><!-- #archives.widget -->
+        
+        <!-- WP (replaces both widget containers above)
+        <?php get_sidebar('blog'); ?>
+          -->
+        
+    </div><!-- #sidebar -->
+    
+    <div id="content">
+		<!-- Make sure to style the next line using the class (e.g. #content .blog-title) rather than H1 (i.e. #content h1). The same style may be used on the blog single page, only it's no longer an H1, and we will want the same rule to apply to both. -->
+        <h1 class="blog-title">[Blog Title]</h1>
+        <div id="inner-content">
+		<!-- WP
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+          -->
+			<div class="post">
+				<h2>Title of Post 1</h2>
+				<!-- WP (replaces above line)
+				<h2><?php the_title(); ?></h2>
+				  -->
+				<div class="post-meta">Posted on <span class="post-date">July 11, 2012</span> at <span class="post-time">9:27 AM</span></div>
+				<!-- WP (replaces above line)
+				<div class="post-meta">Posted on <span class="post-date"><?php the_time('F j, Y'); ?></span> at <span class="post-time"><?php the_time('g:i A'); ?></span></div>
+				  -->
+	        	<!-- begin the_content(); -->
+				<!-- NOTE: The following is sample content that contains all common HTML tags that a user could use in WordPress. Ensure that everything has proper styling. 
+					 When converting to WordPress, delete everything inside between here and "end the_content();" and replace it with the following:
+				<?php the_content(); ?>
+				  -->
+				<p>This sample post includes all possible HTML elements so you can be sure that everything in the content is styled correctly.</p>
+				<hr />
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+				<hr />
+				<h3 id="paragraph">Paragraph</h2>
+				<p>Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+				<p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+				<hr />
+				<h3 id="list_types">List Types</h2>
+				<h4>Ordered List</h3>
+				<ol>
+				  <li>List Item 1</li>
+				  <li>List Item 2</li>
+				  <li>List Item 3</li>
+				</ol>
+				<h4>Unordered List</h3>
+				<ul>
+				  <li>List Item 1</li>
+				  <li>List Item 2</li>
+				  <li>List Item 3</li>
+				</ul>
+				<hr />
+				<h3 id="tables">Tables</h2>
+				<table cellspacing="0" cellpadding="0">
+				  <tr>
+					<th>Table Header 1</th>
+					<th>Table Header 2</th>
+					<th>Table Header 3</th>
+				  </tr>
+				  <tr>
+					<td>Division 1</td>
+					<td>Division 2</td>
+					<td>Division 3</td>
+				  </tr>
+				  <tr class="even">
+					<td>Division 1</td>
+					<td>Division 2</td>
+					<td>Division 3</td>
+				  </tr>
+				  <tr>
+					<td>Division 1</td>
+					<td>Division 2</td>
+					<td>Division 3</td>
+				  </tr>
+				</table>
+				<hr />
+				<h3 id="misc">Blockquote</h2>
+				<blockquote>
+				  <p> &#8220;Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.&#8221;
+					&#8220;Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.&#8221;<br />
+					-Cicero </p>
+				</blockquote>
+			</div><!-- .post -->
+
+			<div class="post">
+				<h2>Title of Post 2</h2>
+				<div class="post-meta">Posted on July 2, 2012 at 10:09 AM</div>
+				<p>Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+				<h3>Subtitle of Post 2</h3>
+				<p>Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+			</div><!-- .post -->
+			
+			<div class="post">
+				<h2>Title of Post 3</h2>
+				<div class="post-meta">Posted on June 14 2, 2012 at 5:49 PM</div>
+				<p>Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+				<h3>Subtitle of Post 3</h3>
+				<p>Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+				<!-- end the_content(); -->
+			</div><!-- .post -->
+        </div><!-- #inner-content -->
+        <!-- WP
+        <?php endwhile; endif; ?>
+          -->
+    </div><!-- #content -->
+</div><!-- #main -->
+
+<!-- WP
+<?php get_footer(); ?>
+  -->
+  
+<!-- WP: END page.php -->
+
+<!-- WP: BEGIN footer.php -->
+<!-- WP
+<?php
+/* Footer template */
+?>
+-->
+
+		<div id="footer">
+        
+            <div id="copyright">
+            	<p>Copyright &copy;2012 CLIENT NAME HERE</p>
+                <!-- WP (replaces above line)
+            	<p>Copyright &copy;<?php echo date('y'); ?> CLIENT NAME HERE</p>
+                  -->
+            </div>
+            
+            <div id="hippo">
+            	<div class="left"><a href="http://www.flyinghippo.com">Iowa Web Design</a></div>
+                <div class="middle"><a href="http://www.flyinghippo.com"><span>Flying Hippo Web Technologies</span></a></div>
+                <div class="right"><a href="http://www.flyinghippo.com">by Flying Hippo</a></div>
+            </div>
+        
+        </div><!-- #footer -->
+    
+    </div><!-- #wrapper -->
+
+<!-- WP
+<?php wp_footer(); ?>
+  -->
+</body>
+</html>
+<!-- END footer.php -->

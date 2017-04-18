@@ -1,0 +1,6 @@
+/* Staff Details pane */
+#_slt_location_details div.slt-cf-field_employee_categories div.slt-cf-multifield
+{
+	display: inline-block;
+	width: 24%;
+}

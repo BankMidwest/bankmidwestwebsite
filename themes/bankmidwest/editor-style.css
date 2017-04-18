@@ -1,0 +1,7 @@
+/**
+ * Admin editor styles. Useful for styling the editor to look like the frontend of the site if the typography is different. 
+ * Also useful when custom styles are used so the user can see what it will look like before publishing.
+ * Note: This is disabled by default. Uncomment the add_editor_styles() function in functions.php to enable it.
+ */
+
+ .nopdf { display: none; }

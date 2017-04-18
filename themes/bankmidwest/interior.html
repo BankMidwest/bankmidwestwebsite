@@ -1,0 +1,484 @@
+<!-- WP: BEGIN header.php -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<!-- WP (replaces above line)
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); fh_html(); ?>>
+  -->
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!-- WP (replaces above line)
+    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+      -->
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+
+	<title>Bank Midwest</title>
+    <!-- WP (replaces above line)
+	<title><?php wp_title(''); ?></title>
+      -->
+
+	<link rel="stylesheet" type="text/css" href="../fh-starter/style.css" />
+	<link rel="shortcut icon" href="../fh-starter/favicon.ico" type="image/x-icon" />
+	<!-- WP (replaces above two lines)
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
+	<?php if (function_exists('add_favicon_link')) add_favicon_link(); ?>
+      -->
+
+	<!-- WP
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php bloginfo('atom_url'); ?>" />
+      -->
+
+	<script type="text/javascript" src="../fh-starter/inc/jquery-1.7.2.min.js"></script>
+	<!-- WP (replaces above line)
+	<?php wp_enqueue_script('jquery'); ?>
+	-->
+
+	<!-- WP
+	<?php wp_head(); ?>
+      -->
+	  
+	<!-- Uncomment this if Google Site Search will be used
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	-->
+	<script type="text/javascript" src="../fh-starter/inc/toggleLabel.js"></script>
+	<!-- WP (replaces above line)
+	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/inc/toggleLabel.js"></script>
+	-->
+
+	<!-- Load ie.css for IE 6 and 7. Delete the below if you do not need an IE-specific stylesheet, or change the LTE value if you need it to apply to 8 or 9 as well. -->
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/ie.css" />
+	<![endif]-->
+	  
+</head>
+
+<body>
+	<div id="wrapper">
+
+		<div id="header">
+		<div class="black-top">
+			<div class="inner">
+			<ul id="ancillary" class="nav-menu">
+            	<li><a href="#">Login</a></li>
+                <li><a href="#">Hours/Location</a></li>
+				<li><a href="#">ATMs</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Search</a></li>
+            </ul><!-- #ancillary -->
+			</div><!--.inner-->
+		</div><!--.black-top-->
+        	<div class="inner">
+			<!-- Note: Make sure to just use the selector "#logo a" for the below, rather than the more specific "h1#logo a". When
+				it's converted to WordPress, we dynamically change the element to "div" rather than "h1" if it's an interior page,
+				so only the ID will stay constant.  -->
+			<div class="top-container">	 
+				<h1 id="logo"><a href="#"><span>Bank Midwest</span></a></h1>
+			</div><!--.top-container-->
+			<!-- WP (replaces above line)
+			<?php if (is_front_page()) $header_element = 'h1'; else $header_element = 'div';
+				echo '<' . $header_element . ' id="logo">'; ?>
+				<a href="<?php bloginfo('url'); ?>">
+					<span>SITE TITLE HERE</span>
+				</a>
+			<?php echo '</' . $header_element . '>'; ?>
+			   -->
+          
+			
+        	
+            
+			<!-- 
+				Delete the following section if search is not used. 
+				The following code (in conjunction with toggleLabel.js) will allow you to create a search field that clears itself 
+				    when you start typing. Looks cool and it's very good for usability.
+				The code is fairly unintuitive to read through, but the default style should be most of the way there. Use the existing
+					classes in the CSS file and try to only change what you need in order to get it to look how you want.
+			-->
+			<!--<div id="search">
+				<form action="/search/" id="cse-search-box">-->
+				<!-- WP (replaces above line)
+				<form action="<?php bloginfo('url'); ?>/search/" id="cse-search-box">
+				-->
+					<!-- Uncomment the below two lines after the Google Site Search account has been set up and replace the values accordingly.
+						Also update the ID in footer.php's search code as well when you do this.
+					<input type="hidden" name="cx" value="003074495176662961374:9syzombjdwk" />
+					<input type="hidden" name="cof" value="FORID:11" />
+					-->
+				<!--	<input type="hidden" name="ie" value="UTF-8" />
+					<label class="input">
+						<span>Search Site</span>
+						<input type="text" id="searchfield" name="q" />
+					</label>
+					<input type="submit" name="sa" value="Search" id="searchbutton" title="Search" />
+					<input type="hidden" name="sa" value="Search" />
+					<div class="clear"></div>
+				</form>
+			</div>--><!-- #search -->
+			
+      		<ul id="nav" class="nav-menu">
+            	<!-- 
+					Be sure to change these IDs to something more descriptive - not just "link1",  "link2", etc. 
+					If dropdown menus are not needed, you can remove the child ULs.
+				-->
+            	<li id="link1">
+					<a href="#"><span>Bank</span></a>
+					<!--<ul class="children">
+						<li><a href="#">Sublink 1</a></li>
+						<li><a href="#">Sublink 2</a></li>
+						<li><a href="#">Sublink 3</a></li>
+					</ul>-->
+				<!-- WP (replaces above UL)
+				<?php 
+					$pages = NULL; $pages = wp_list_pages('child_of=2&depth=1&title_li=&echo=0'); 
+					if ($pages) {
+						echo '<ul>' . $pages . '</ul>';
+					} ?>
+				-->
+				</li>
+                <li id="link2">
+					<a href="#"><span>Borrow</span></a>
+				<!-- WP
+				<?php 
+					$pages = NULL; $pages = wp_list_pages('child_of=2&depth=1&title_li=&echo=0'); 
+					if ($pages) {
+						echo '<ul>' . $pages . '</ul>';
+					} ?>
+				-->
+				</li>
+                <li id="link3">
+					<a href="#"><span>Insure</span></a>
+				<!-- WP
+				<?php 
+					$pages = NULL; $pages = wp_list_pages('child_of=2&depth=1&title_li=&echo=0'); 
+					if ($pages) {
+						echo '<ul>' . $pages . '</ul>';
+					} ?>
+				-->
+				</li>
+                <li id="link4">
+					<a href="#"><span>Grow</span></a>
+				<!-- WP
+				<?php 
+					$pages = NULL; $pages = wp_list_pages('child_of=2&depth=1&title_li=&echo=0'); 
+					if ($pages) {
+						echo '<ul>' . $pages . '</ul>';
+					} ?>
+				-->
+				</li>
+				 <li id="link5">
+					<a href="#"><span>Learn & Tools</span></a>
+				<!-- WP
+				<?php 
+					$pages = NULL; $pages = wp_list_pages('child_of=2&depth=1&title_li=&echo=0'); 
+					if ($pages) {
+						echo '<ul>' . $pages . '</ul>';
+					} ?>
+				-->
+				</li>
+				 <li id="link6">
+					<a href="#"><span>Get Help</span></a>
+				<!-- WP
+				<?php 
+					$pages = NULL; $pages = wp_list_pages('child_of=2&depth=1&title_li=&echo=0'); 
+					if ($pages) {
+						echo '<ul>' . $pages . '</ul>';
+					} ?>
+				-->
+				</li>
+            </ul><!-- #nav -->
+        	
+			</div><!--.inner-->
+		
+        </div><!-- #header -->
+
+<!-- WP: END header.php -->
+
+<!-- WP: BEGIN page.php
+<?php
+/* Inner page template */
+
+get_header();
+?>
+  -->
+
+<div id="main">
+        <div class="inner">
+			<div class="inner-hm-content">
+			<div class="hm-content">
+			
+			 <div class="title-image">
+			 	<h1 class="page-title">Interior Content Page Title</h1>
+        <!-- WP (replaces above line)
+		<?php the_title(); ?>
+          -->
+			 	
+			 </div><!--.title-image-->
+			  <div class="dozer"></div><!--.dozer-->
+			
+	<div id="sidebar">
+    	<!-- Sidebar can be moved on the other side of the main content area if the design calls for a right sidebar. Just move this whole #sidebar div after the close of the #content div. --> 
+    	
+        <!--
+        Note: This sidebar is the most common configuration of an interior page navigation,
+            and it has been set up with three scenarios to cover the majority of the styling
+            possibilities. 
+             - In the first section, Page 1, the third link is the currently-active page. The
+               parent is given both .current_page_parent and .current_page_ancestor.
+             - In the second section, Page 2, the top level link is the currently-active page.
+               It is given a class of .current_page_item. Generally, the children of non-active
+               pages are hidden so as to not clutter the navigation. In this situation you want
+               to make sure to show the children of an active page. 
+             - In the third section, the currently-selected item is a third-level page (sub-subpage).
+               This is not always needed for all of our sites, especially ones with simple sitemaps,
+               but it's good to allow for the possibility of a third level page.
+             - In the fourth section, Page 4 is entirely unselected. As above, you probably will 
+               want to make sure that the child UL is hidden.
+               
+            The base CSS file of the theme has been configured with all the selectors you will
+            need in order to style this list, as well as default styles for all of them. When you
+            convert to WordPress, you can delete all of the flat HTML below, and this comment as well,
+			and then uncomment the "get_sidebar()" function below to make the the sidebar dynamic.
+          -->
+
+		<ul class="sidenav">
+        	<li>
+            	<a href="#">Page 1</a>
+                <ul class="children">
+                	<li><a href="#">Subpage 1-1</a></li>
+                	<li><a href="#">Subpage 1-2</a></li>
+                	<li class="current_page_item"><a href="#">Subpage 1-3 (active)</a></li>
+                	<li><a href="#">Subpage 1-4</a></li>
+                </ul>
+            </li>
+        	<li class="current_page_item">
+            	<a href="#">Page 2 (active)</a>
+                <ul class="children active">
+                	<li><a href="#">Subpage 2-1</a></li>
+                	<li><a href="#">Subpage 2-2</a></li>
+                	<li><a href="#">Subpage 2-3</a></li>
+                	<li><a href="#">Subpage 2-4</a></li>
+                </ul>
+            </li>
+        	<li>
+            	<a href="#">Page 3</a>
+                <ul class="children">
+                	<li><a href="#">Subpage 3-1</a></li>
+                	<li class="current_page_parent current_page_ancestor"><a href="#">Subpage 3-2</a>
+                    	<ul class="children">
+	                        <li class="current_page_item"><a href="#">Subpage 3-2-1</a></li>
+                        </ul>
+                    </li>
+                	<li><a href="#">Subpage 3-3</a></li>
+                	<li><a href="#">Subpage 3-4</a></li>
+                </ul>
+            </li>
+        	<li>
+            	<a href="#">Page 4</a>
+                <ul class="children">
+                	<li><a href="#">Subpage 4-1</a></li>
+                	<li><a href="#">Subpage 4-2</a></li>
+                	<li><a href="#">Subpage 4-3</a></li>
+                	<li><a href="#">Subpage 4-4</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <!-- WP (replaces the whole <ul> element above)
+        <?php get_sidebar(); ?>
+          -->
+    <div class="side-links">
+		<a class="crop" href="#">Other Products</a>
+		<a class="download" href="#">Download an Application</a>
+		<a class="request" href="#">Request More Information</a>
+		<a class="share" href="#">Share Your Great Experience</a>
+	</div><!--.side-links-->
+			
+		<a class="contact" href="#">Contact Us</a>
+	
+	
+	
+    </div><!-- #sidebar -->
+    
+    <div id="content">
+    	<!-- WP
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+          -->
+        
+        <div id="inner-content">
+        	<!-- begin the_content(); -->
+            <!-- NOTE: The following is sample content that contains all common HTML tags that a user could use in WordPress. Ensure that everything has proper styling. 
+				 When converting to WordPress, delete everything inside #inner-content and replace it with the following:
+            <?php the_content(); ?>
+              -->
+			  
+			 
+			  
+			  <div class="int-text">
+            <p>This sample post includes all possible HTML elements so you can be sure that everything in the content is styled correctly.</p>
+            <hr />
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <hr />
+            <h2 id="paragraph">Paragraph</h2>
+			<div id="attachment_100" class="wp-caption alignright"><img class="wp-image-100" title="Image Title Here" src="../fh-starter/images/fpo-caption-image.jpg" alt="Caption image" width="300" height="240" /></a><p class="wp-caption-text">Testing the WordPress image caption functionality.</p></div>
+            <p>Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+            <p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+            <hr />
+            <h2 id="list_types">List Types</h2>
+            <h3>Ordered List</h3>
+            <ol>
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+            </ol>
+            <h3>Unordered List</h3>
+            <ul>
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+            </ul>
+            <hr />
+            <h2 id="tables">Tables</h2>
+            <table cellspacing="0" cellpadding="0">
+              <tr>
+                <th>Table Header 1</th>
+                <th>Table Header 2</th>
+                <th>Table Header 3</th>
+              </tr>
+              <tr>
+                <td>Division 1</td>
+                <td>Division 2</td>
+                <td>Division 3</td>
+              </tr>
+              <tr class="even">
+                <td>Division 1</td>
+                <td>Division 2</td>
+                <td>Division 3</td>
+              </tr>
+              <tr>
+                <td>Division 1</td>
+                <td>Division 2</td>
+                <td>Division 3</td>
+              </tr>
+            </table>
+            <hr />
+            <h2 id="misc">Blockquote</h2>
+            <blockquote>
+              <p> &#8220;Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.&#8221;
+                &#8220;Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.&#8221;<br />
+                -Cicero </p>
+            </blockquote>
+			</div><!--.hm-text-->
+            <!-- end the_content(); -->
+        </div><!-- #inner-content -->
+        <!-- WP
+        <?php endwhile; endif; ?>
+          -->
+    </div><!-- #content -->
+			<div class="dozer"></div><!--.dozer-->
+				</div><!--.hm-content-->
+			</div><!--.inner-hm-content-->
+				<div class="dozer"></div><!--.dozer-->
+	</div><!--.inner-->
+</div><!-- #main -->
+
+<!-- WP
+<?php get_footer(); ?>
+  -->
+  
+<!-- WP: END page.php -->
+
+<!-- WP: BEGIN footer.php -->
+<!-- WP
+<?php
+/* Footer template */
+?>
+-->
+<div class="inner">
+<div class="inner-hm-content">
+		<div id="footer">
+        	
+			<div class="footer-left">
+				<div id="copyright">
+					Copyright &copy;2013 Bank Midwest  |  All Rights Reserved.  |  Equal Housing Lender Disclosure.<br />
+					Member FDIC  | <img src="../fh-starter/images/house.png" width="21" height="18" /> Equal Housing Lendor 
+					<!-- WP (replaces above line)
+					<p>Copyright &copy;<?php echo date('Y'); ?> CLIENT NAME HERE</p>
+					  -->
+				</div>
+				
+				
+			
+				<div id="hippo">
+					<div class="left"><a href="http://www.flyinghippo.com">Iowa Web Design</a></div>
+					<div class="middle"><a href="http://www.flyinghippo.com"><span>Flying Hippo Web Technologies</span></a></div>
+					<div class="right"><a href="http://www.flyinghippo.com">by Flying Hippo</a></div>
+				</div><!--.hippo-->
+				
+				</div><!--.footer-left-->
+				
+			<div id="social">
+				<ul class="connect-icons">
+					<li id="social-facebook"><a href="http://www.google.com" target="_blank"><span>Facebook</span></a></li>
+					<li id="social-rss"><a href="http://www.google.com" target="_blank"><span>RSS</span></a></li>
+					<li id="social-twitter"><a href="http://www.google.com" target="_blank"><span>Twitter</span></a></li>
+					<li id="social-linkedin"><a href="http://www.google.com"><span>Linked In</span></a></li>
+					<li id="social-email"><a href="http://www.google.com" target="_blank"><span>Email"></span></a></li>
+				</ul>
+			</div><!--#social-->
+        
+			<div class="dozer"></div><!--.dozer-->
+			
+		
+        </div><!-- #footer -->
+		
+		</div><!--inner-hm-content-->
+    </div><!--.inner-->
+    </div><!-- #wrapper -->
+
+<!-- WP
+<?php wp_footer(); ?>
+  -->
+  
+<!-- WP: If the site uses Google Site Search, you'll want to include the below. Create a page called "Search Results" and change the slug to just "search".
+<?php 
+if (is_page('search')) { ?>
+<script type="text/javascript">
+  function parseQueryFromUrl () {
+	var queryParamName = "q";
+	var search = window.location.search.substr(1);
+	var parts = search.split('&');
+	for (var i = 0; i < parts.length; i++) {
+	  var keyvaluepair = parts[i].split('=');
+	  if (decodeURIComponent(keyvaluepair[0]) == queryParamName) {
+		return decodeURIComponent(keyvaluepair[1].replace(/\+/g, ' '));
+	  }
+	}
+	return '';
+  }
+  google.load('search', '1', {language : 'en'});
+  google.setOnLoadCallback(function() {
+	// NOTE: The ID in the next line must be updated to use the ID for the client's account (which should match the ID in header.php's search code)
+	var customSearchControl = new google.search.CustomSearchControl('003074495176662961374:h2kvmtempkm');
+	customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+	var options = new google.search.DrawOptions();
+	options.enableSearchResultsOnly();    
+	customSearchControl.draw('cse', options);
+	var queryFromUrl = parseQueryFromUrl();
+	if (queryFromUrl) {
+	  customSearchControl.execute(queryFromUrl);
+	}
+  }, true);
+</script>
+<?php } ?>
+  -->
+</body>
+</html>
+<!-- END footer.php -->

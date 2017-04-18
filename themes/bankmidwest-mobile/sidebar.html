@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Sidebar Test</title>
+<link rel="stylesheet" type="text/css" href="../fh-starter/style.css" />
+</head>
+<body>
+
+
+
+
+       <!-- 
+        Note: This sidebar is the most common configuration of an interior page navigation,
+            and it has been set up with three scenarios to cover the majority of the styling
+            possibilities. 
+             - In the first section, Page 1, the third link is the currently-active page. The
+               parent is given both .current_page_parent and .current_page_ancestor.
+             - In the second section, Page 2, the top level link is the currently-active page.
+               It is given a class of .current_page_item. Generally, the children of non-active
+               pages are hidden so as to not clutter the navigation. In this situation you want
+               to make sure to show the children of an active page. 
+             - In the third section, there are   
+             - In the fourth section, Page 4 is entirely unselected. As above, you probably will 
+               want to make sure that the child UL is hidden.
+        -->
+    	<ul class="xoxo">
+        	<li>
+            	<a href="#">Page 1</a>
+                <ul class="children">
+                	<li><a href="#">Subpage 1-1</a></li>
+                	<li><a href="#">Subpage 1-2</a></li>
+                	<li class="active"><a href="#">Subpage 1-3 (active)</a></li>
+                	<li><a href="#">Subpage 1-4</a></li>
+                </ul>
+            </li>
+        	<li class="current_page_item">
+            	<a href="#">Page 2 (active)</a>
+                <ul class="children active">
+                	<li><a href="#">Subpage 2-1</a></li>
+                	<li><a href="#">Subpage 2-2</a></li>
+                	<li><a href="#">Subpage 2-3</a></li>
+                	<li><a href="#">Subpage 2-4</a></li>
+                </ul>
+            </li>
+        	<li>
+            	<a href="#">Page 3</a>
+                <ul class="children">
+                	<li class="current_page_parent current_page_ancestor"><a href="#">Subpage 3-1</a>
+                    	<ul class="children">
+                        	<li class="current_page_item"><a href="#">Subpage 3-1-1</a></li>
+                        </ul>
+                    </li>
+                	<li><a href="#">Subpage 3-2</a></li>
+                	<li><a href="#">Subpage 3-3</a></li>
+                	<li><a href="#">Subpage 3-4</a></li>
+                </ul>
+            </li>
+        	<li>
+            	<a href="#">Page 4</a>
+                <ul class="children">
+                	<li><a href="#">Subpage 4-1</a></li>
+                	<li><a href="#">Subpage 4-2</a></li>
+                	<li><a href="#">Subpage 4-3</a></li>
+                	<li><a href="#">Subpage 4-4</a></li>
+                </ul>
+            </li>
+        </ul>
+        </body>
+        </html>

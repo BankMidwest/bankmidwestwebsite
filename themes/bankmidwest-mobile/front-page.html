@@ -1,0 +1,390 @@
+<!-- WP: BEGIN header.php -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<!-- WP (replaces above line)
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); fh_html(); ?>>
+  -->
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!-- WP (replaces above line)
+    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+      -->
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+
+	<title>Bank Midwest</title>
+    <!-- WP (replaces above line)
+	<title><?php wp_title(''); ?></title>
+      -->
+
+	<link rel="stylesheet" type="text/css" href="../fh-starter/style.css" />
+	<link rel="shortcut icon" href="../fh-starter/favicon.ico" type="image/x-icon" />
+	<!-- WP (replaces above two lines)
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
+	<?php if (function_exists('add_favicon_link')) add_favicon_link(); ?>
+      -->
+
+	<!-- WP
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php bloginfo('atom_url'); ?>" />
+      -->
+
+	<script type="text/javascript" src="../fh-starter/inc/jquery-1.7.2.min.js"></script>
+	<!-- WP (replaces above line)
+	<?php wp_enqueue_script('jquery'); ?>
+	-->
+
+	<!-- WP
+	<?php wp_head(); ?>
+      -->
+	  
+	<!-- Uncomment this if Google Site Search will be used
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	-->
+	<script type="text/javascript" src="../fh-starter/inc/toggleLabel.js"></script>
+	<!-- WP (replaces above line)
+	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/inc/toggleLabel.js"></script>
+	-->
+
+	<!-- Load ie.css for IE 6 and 7. Delete the below if you do not need an IE-specific stylesheet, or change the LTE value if you need it to apply to 8 or 9 as well. -->
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/ie.css" />
+	<![endif]-->
+	  
+</head>
+
+<body>
+	<div id="wrapper">
+
+		<div id="header">
+		<div class="black-top">
+			<div class="inner">
+			<ul id="ancillary" class="nav-menu">
+            	<li><a href="#">Login</a></li>
+                <li><a href="#">Hours/Location</a></li>
+				<li><a href="#">ATMs</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Search</a></li>
+            </ul><!-- #ancillary -->
+			</div><!--.inner-->
+		</div><!--.black-top-->
+        	<div class="inner">
+			<!-- Note: Make sure to just use the selector "#logo a" for the below, rather than the more specific "h1#logo a". When
+				it's converted to WordPress, we dynamically change the element to "div" rather than "h1" if it's an interior page,
+				so only the ID will stay constant.  -->
+			<div class="top-container">	 
+				<h1 id="logo"><a href="#"><span>Bank Midwest</span></a></h1>
+			</div><!--.top-container-->
+			<!-- WP (replaces above line)
+			<?php if (is_front_page()) $header_element = 'h1'; else $header_element = 'div';
+				echo '<' . $header_element . ' id="logo">'; ?>
+				<a href="<?php bloginfo('url'); ?>">
+					<span>SITE TITLE HERE</span>
+				</a>
+			<?php echo '</' . $header_element . '>'; ?>
+			   -->
+          
+			
+        	
+            
+			<!-- 
+				Delete the following section if search is not used. 
+				The following code (in conjunction with toggleLabel.js) will allow you to create a search field that clears itself 
+				    when you start typing. Looks cool and it's very good for usability.
+				The code is fairly unintuitive to read through, but the default style should be most of the way there. Use the existing
+					classes in the CSS file and try to only change what you need in order to get it to look how you want.
+			-->
+			<!--<div id="search">
+				<form action="/search/" id="cse-search-box">-->
+				<!-- WP (replaces above line)
+				<form action="<?php bloginfo('url'); ?>/search/" id="cse-search-box">
+				-->
+					<!-- Uncomment the below two lines after the Google Site Search account has been set up and replace the values accordingly.
+						Also update the ID in footer.php's search code as well when you do this.
+					<input type="hidden" name="cx" value="003074495176662961374:9syzombjdwk" />
+					<input type="hidden" name="cof" value="FORID:11" />
+					-->
+				<!--	<input type="hidden" name="ie" value="UTF-8" />
+					<label class="input">
+						<span>Search Site</span>
+						<input type="text" id="searchfield" name="q" />
+					</label>
+					<input type="submit" name="sa" value="Search" id="searchbutton" title="Search" />
+					<input type="hidden" name="sa" value="Search" />
+					<div class="clear"></div>
+				</form>
+			</div>--><!-- #search -->
+			
+      		<ul id="nav" class="nav-menu">
+            	<!-- 
+					Be sure to change these IDs to something more descriptive - not just "link1",  "link2", etc. 
+					If dropdown menus are not needed, you can remove the child ULs.
+				-->
+            	<li id="link1">
+					<a href="#"><span>Bank</span></a>
+					<!--<ul class="children">
+						<li><a href="#">Sublink 1</a></li>
+						<li><a href="#">Sublink 2</a></li>
+						<li><a href="#">Sublink 3</a></li>
+					</ul>-->
+				<!-- WP (replaces above UL)
+				<?php 
+					$pages = NULL; $pages = wp_list_pages('child_of=2&depth=1&title_li=&echo=0'); 
+					if ($pages) {
+						echo '<ul>' . $pages . '</ul>';
+					} ?>
+				-->
+				</li>
+                <li id="link2">
+					<a href="#"><span>Borrow</span></a>
+				<!-- WP
+				<?php 
+					$pages = NULL; $pages = wp_list_pages('child_of=2&depth=1&title_li=&echo=0'); 
+					if ($pages) {
+						echo '<ul>' . $pages . '</ul>';
+					} ?>
+				-->
+				</li>
+                <li id="link3">
+					<a href="#"><span>Insure</span></a>
+				<!-- WP
+				<?php 
+					$pages = NULL; $pages = wp_list_pages('child_of=2&depth=1&title_li=&echo=0'); 
+					if ($pages) {
+						echo '<ul>' . $pages . '</ul>';
+					} ?>
+				-->
+				</li>
+                <li id="link4">
+					<a href="#"><span>Grow</span></a>
+				<!-- WP
+				<?php 
+					$pages = NULL; $pages = wp_list_pages('child_of=2&depth=1&title_li=&echo=0'); 
+					if ($pages) {
+						echo '<ul>' . $pages . '</ul>';
+					} ?>
+				-->
+				</li>
+				 <li id="link5">
+					<a href="#"><span>Learn & Tools</span></a>
+				<!-- WP
+				<?php 
+					$pages = NULL; $pages = wp_list_pages('child_of=2&depth=1&title_li=&echo=0'); 
+					if ($pages) {
+						echo '<ul>' . $pages . '</ul>';
+					} ?>
+				-->
+				</li>
+				 <li id="link6">
+					<a href="#"><span>Get Help</span></a>
+				<!-- WP
+				<?php 
+					$pages = NULL; $pages = wp_list_pages('child_of=2&depth=1&title_li=&echo=0'); 
+					if ($pages) {
+						echo '<ul>' . $pages . '</ul>';
+					} ?>
+				-->
+				</li>
+            </ul><!-- #nav -->
+        	
+			</div><!--.inner-->
+		
+        </div><!-- #header -->
+
+<!-- WP: END header.php -->
+
+<!-- WP: BEGIN front-page.php -->
+
+<!-- WP
+<?php
+/* Homepage template */
+
+get_header();
+?>
+-->
+		<div id="main">
+			<div class="inner">
+			<div class="slider">
+				<div class="left-arrow"></div><!--.left-arrow-->
+					<div class="slider-main-image">
+						<div class="login-box"></div><!--.login-box-->
+						<div class="box-one">
+							<div class="box-text">
+								<h2>Credit Cards</h2>
+								Amet aliquam eros setiam parte sed velit no suscipit.
+							</div><!--.box-text-->
+						</div><!--.box-one-->
+						<div class="box-two">
+							<div class="box-text">
+							<h2>Online Bill Pay</h2>
+							Amet aliquam eros setiam parte sed velit no suscipit.
+						</div><!--.box-text-->
+						</div><!--.box-two-->
+					</div><!--.slider-main-image-->
+				<div class="right-arrow"></div><!--.right-arrow-->
+			</div><!--.slider-->
+			
+			<div class="inner-hm-content">
+				<div class="highlights">
+					<div class="apply">
+						<div class="ribbon"></div><!--.ribbon-->
+						<div class="offer"></div><!--.offer-->
+					</div><!--.apply-->
+					<div class="alert">
+						<div class="alert-one">
+							<h3 class="alert-title">New Hours</h3>
+							Effective on November 1st Bank Midwest will be changing the operation hours.
+							<a class="learn-more">Learn More</a>
+						</div><!--.alert-one-->
+						
+						<div class="alert-one">
+							<h3 class="alert-title">New Hours</h3>
+							Effective on November 1st Bank Midwest will be changing the operation hours.
+							<a class="learn-more">Learn More</a>
+						</div><!--.alert-one-->
+					
+					</div><!--.alert-->
+				</div><!--.highlights-->
+				
+				<div class="hm-content">
+				<div class="hm-text">
+					<h2>Etiam eget lacus quis orci adipiscing imperdiet. </h2>
+					Curabitur id quam odio. Nullam consequat elit at est dictum feugiat. Sed a elit elementum lorem sagittis rhoncus. Duis venenatis adipiscing posuere. Aliquam elit neque, rutrum nec pulvinar tristique, dignissim ac lorem. Donec consectetur condimentum fermentum. Morbi suscipit ipsum auctor arcu tristique scelerisque. Aliquam id metus at enim tempor venenatis. Maecenas interdum leo luctus enim blandit non placerat ipsum euismod. Donec imperdiet, neque a feugiat semper, mi nisi tempor eros, eu varius leo enim tincidunt orci. Vestibulum fermentum dapibus mi ac tincidunt. Donec turpis elit, gravida vitae accumsan eu, malesuada nec nibh. Vivamus volutpat nisl sed elit tristique.<br /><img src="../fh-starter/images/hm-bbig.jpg" width="477" height="149" />
+
+				</div><!--.hm-text-->
+				<div class="hm-side">
+					<div class="hm-side-blog">
+					<h3>Blog</h3>
+						<div class="blog-title">How to prepare for your 2013 Taxes right now!</div><!--.blog-title-->
+<div class="blog-text"><span class="blog-date">10/30</span>  Lorem ipsum dolar sed dia consequtet abria numbe se havuk oleps verde weret...</div><!--.blog-text-->
+<a class="read-more">Read More</a> 
+					</div><!--.hm-side-blog-->
+				
+					<div class="hm-side-news">
+						<h3>News</h3>
+						<div class="news-post">
+							<div class="news-date">10/30</div><!--.news-date-->
+							<div class="news-text">Black Friday deals hurt Middle-Income Families <img src="../fh-starter/images/arrow-green.png" width="5" height="9" /> </div><!--.news-text-->
+						</div><!--.news-post-->
+						<div class="news-post">
+							<div class="news-date">10/30</div><!--.news-date-->
+							<div class="news-text">Black Friday deals hurt Middle-Income Families <img src="../fh-starter/images/arrow-green.png" width="5" height="9" /> </div><!--.news-text-->
+						</div><!--.news-post-->
+						<div class="dozer"></div><!--.dozer-->
+					</div><!--.hm-side-news-->
+					
+					<a class="livechat" href="#">Live Chat</a>
+					<a class="contact" href="#">Contact Us</a>
+					
+					<div class="facebook"></div><!--.facebook-->
+					<div class="fb-like">liquam elit neque, rutrum nec pulvinar tristique, dignissim ac lorem. Donec consectetur condimentum fermentum. Morbi suscipit ipsum auctor arcu tristique scelerisque. Aliquam id metus at enim tempor venenatis. </div><!--.fb-like-->
+
+					
+				
+				</div><!--.hm-side-->
+				<div class="dozer"></div><!--.dozer-->
+				</div><!--.hm-content-->
+				
+			</div><!--.inner-hm-content-->
+				<!-- Content exclusive to the homepage goes here. -->
+				<div class="dozer"></div><!--.dozer-->
+			</div><!--.inner-->
+        </div><!-- #main -->
+        
+<!-- WP
+<?php get_footer(); ?>
+  -->
+
+<!-- WP: END front-page.php -->
+
+<!-- WP: BEGIN footer.php -->
+<!-- WP
+<?php
+/* Footer template */
+?>
+-->
+<div class="inner">
+<div class="inner-hm-content">
+		<div id="footer">
+        	
+			<div class="footer-left">
+				<div id="copyright">
+					Copyright &copy;2013 Bank Midwest  |  All Rights Reserved.  |  Equal Housing Lender Disclosure.<br />
+					Member FDIC  | <img src="../fh-starter/images/house.png" width="21" height="18" /> Equal Housing Lendor 
+					<!-- WP (replaces above line)
+					<p>Copyright &copy;<?php echo date('Y'); ?> CLIENT NAME HERE</p>
+					  -->
+				</div>
+				
+				
+			
+				<div id="hippo">
+					<div class="left"><a href="http://www.flyinghippo.com">Iowa Web Design</a></div>
+					<div class="middle"><a href="http://www.flyinghippo.com"><span>Flying Hippo Web Technologies</span></a></div>
+					<div class="right"><a href="http://www.flyinghippo.com">by Flying Hippo</a></div>
+				</div><!--.hippo-->
+				
+				</div><!--.footer-left-->
+				
+			<div id="social">
+				<ul class="connect-icons">
+					<li id="social-facebook"><a href="http://www.google.com" target="_blank"><span>Facebook</span></a></li>
+					<li id="social-rss"><a href="http://www.google.com" target="_blank"><span>RSS</span></a></li>
+					<li id="social-twitter"><a href="http://www.google.com" target="_blank"><span>Twitter</span></a></li>
+					<li id="social-linkedin"><a href="http://www.google.com"><span>Linked In</span></a></li>
+					<li id="social-email"><a href="http://www.google.com" target="_blank"><span>Email"></span></a></li>
+				</ul>
+			</div><!--#social-->
+        
+			<div class="dozer"></div><!--.dozer-->
+			
+		
+        </div><!-- #footer -->
+		
+		</div><!--inner-hm-content-->
+    </div><!--.inner-->
+    </div><!-- #wrapper -->
+
+<!-- WP
+<?php wp_footer(); ?>
+  -->
+  
+<!-- WP: If the site uses Google Site Search, you'll want to include the below. Create a page called "Search Results" and change the slug to just "search".
+<?php 
+if (is_page('search')) { ?>
+<script type="text/javascript">
+  function parseQueryFromUrl () {
+	var queryParamName = "q";
+	var search = window.location.search.substr(1);
+	var parts = search.split('&');
+	for (var i = 0; i < parts.length; i++) {
+	  var keyvaluepair = parts[i].split('=');
+	  if (decodeURIComponent(keyvaluepair[0]) == queryParamName) {
+		return decodeURIComponent(keyvaluepair[1].replace(/\+/g, ' '));
+	  }
+	}
+	return '';
+  }
+  google.load('search', '1', {language : 'en'});
+  google.setOnLoadCallback(function() {
+	// NOTE: The ID in the next line must be updated to use the ID for the client's account (which should match the ID in header.php's search code)
+	var customSearchControl = new google.search.CustomSearchControl('003074495176662961374:h2kvmtempkm');
+	customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+	var options = new google.search.DrawOptions();
+	options.enableSearchResultsOnly();    
+	customSearchControl.draw('cse', options);
+	var queryFromUrl = parseQueryFromUrl();
+	if (queryFromUrl) {
+	  customSearchControl.execute(queryFromUrl);
+	}
+  }, true);
+</script>
+<?php } ?>
+  -->
+</body>
+
+</html>
+<!-- END footer.php -->

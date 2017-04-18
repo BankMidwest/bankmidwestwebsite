@@ -1,0 +1,77 @@
+.fhalerts,
+.fhalerts * {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+#fhalerts {
+    background-color: #FAA41A;
+    color: #fff;
+    width: 100%;
+    z-index: 100;
+}
+
+.fhalert-text {
+    background-image: url('../images/alert-icon.png');
+    float: left;
+    min-height: 60px;
+    padding-left: 80px;
+}
+
+    .fhalerts-int {
+        margin: 0 auto;
+        max-width: 1000px;
+        overflow: hidden;
+        padding: 20px 56px 20px 20px;
+        position: relative;
+    }
+
+    #fhalerts h4 {
+        background: none;
+        color: #000;
+        float: none;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 1.4em;
+        margin: 0;
+        padding: 5px 0 5px;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    #fhalerts p {
+        background: none;
+        color: inherit;
+        float: none;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    #fhalerts a {
+        background: none;
+        color: #000;
+        float: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-decoration: underline;
+    }
+
+    #fhalerts a:hover {
+        text-decoration: none;
+    }
+
+    #fhalerts .fhdismiss-alert {
+        background-image: url( '../images/icn-exit.png' );
+        background-repeat: no-repeat;
+        background-size: 15px auto;
+        display: block;
+        height: 14px;
+        margin-top: -7px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        width: 15px;
+    }

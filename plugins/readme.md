@@ -1,0 +1,33 @@
+Some plugins were modified or created by Flying Hippo the previous developers.  These plugins have been added to the repo.
+
+
+- Advanced Custom Fiields
+- AJAX Thumbnail Rebuild
+- Better Wordpress Minify
+- Brafton API Article Loader
+- Broken Link Checker
+- Constant Contact Plugin for Wordpress
+- Easy FancyBox
+- Event Espresso (FH-customized) [ FH is flying hippo the previous developers ] 
+    - NEVER UPDATE ANY ESPRESSO PLUGINS AS THE EVENT ONE HAS BEEN MODIFIED THERE COULD BE UNDESIRED CONSEQUENCES
+    - Modified version saved to repo incase
+- Event Espresso - Members Addon
+- Event Espresso - Ticketing 
+- Exclude Pages from Navigation
+- FH Alerts [ Flying Hippo plugin ]
+- FH Testimonials [ Flying Hippo Plugin ]
+- FH - Customized Developer's Custom Fields [ Flying Hippo Plougin ]
+- Get Permalink 
+- Google Analytics by MonsterInsights
+- Gravity Forms
+- InfiniteWP - Client
+- Members
+- Metal
+- Mobiel Theme Switcher [ Flying Hippo Plugin ]
+- Posts 2 Posts
+- Quick Page/Post Redirect Plugin
+- Simple Page Ordering
+- TinyMCE Advanced
+- Tracking Script Manager
+- WP-SCSS
+- Yoast SEO

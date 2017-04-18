@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+	<Document>
+		<Style id="walk-up-atm-Selected">
+			<IconStyle>
+				<Icon>
+					<href>https://www.bankmidwest.com/wp-content/themes/bankmidwest/images/kml/Pin_walk-up-atm-Selected.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id="walk-up-atm">
+			<IconStyle>
+				<Icon>
+					<href>https://www.bankmidwest.com/wp-content/themes/bankmidwest/images/kml/Pin_walk-up-atm.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+
+		<Placemark id="walk-up-atm_768">
+			<styleUrl>#walk-up-atm</styleUrl>
+			<name>AGCO</name>
+			<description>AGCO</description>
+			<Point>
+				<coordinates>-94.97681639999996,43.640724</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="walk-up-atm_1780">
+			<styleUrl>#walk-up-atm</styleUrl>
+			<name>Westbrook, MN</name>
+			<description>Westbrook, MN</description>
+			<Point>
+				<coordinates>-95.4360337,44.0424855</coordinates>
+			</Point>
+		</Placemark>
+	
+	</Document>
+</kml>

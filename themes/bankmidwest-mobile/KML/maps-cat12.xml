@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+	<Document>
+		<Style id="branch-office-Selected">
+			<IconStyle>
+				<Icon>
+					<href>http://www.bankmidwest.com.demo4.flyinghippo.com/wp-content/themes/bankmidwest/images/kml/Pin_branch-office-Selected.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id="branch-office">
+			<IconStyle>
+				<Icon>
+					<href>http://www.bankmidwest.com.demo4.flyinghippo.com/wp-content/themes/bankmidwest/images/kml/Pin_branch-office.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+
+		<Placemark id="branch-office_1778">
+			<styleUrl>#branch-office</styleUrl>
+			<name>Armstrong, IA</name>
+			<description>Armstrong, IA</description>
+			<Point>
+				<coordinates>-94.48023060000003,43.3962387</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="branch-office_739">
+			<styleUrl>#branch-office</styleUrl>
+			<name>Fairmont, MN</name>
+			<description>Fairmont, MN</description>
+			<Point>
+				<coordinates>-94.4473898,43.6509483</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="branch-office_395">
+			<styleUrl>#branch-office</styleUrl>
+			<name>Jackson, MN</name>
+			<description>Jackson, MN</description>
+			<Point>
+				<coordinates>-94.98904600000003,43.621924</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="branch-office_2935">
+			<styleUrl>#branch-office</styleUrl>
+			<name>Lake Park, IA</name>
+			<description>Lake Park, IA</description>
+			<Point>
+				<coordinates>-95.32231480000002,43.4531997</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="branch-office_772">
+			<styleUrl>#branch-office</styleUrl>
+			<name>New Ulm, MN</name>
+			<description>New Ulm, MN</description>
+			<Point>
+				<coordinates>-94.460015,44.311366</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="branch-office_1774">
+			<styleUrl>#branch-office</styleUrl>
+			<name>New Ulm, MN (Insure &amp; Plan)</name>
+			<description>New Ulm, MN (Insure &amp; Plan)</description>
+			<Point>
+				<coordinates>-94.462421,44.316198</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="branch-office_1775">
+			<styleUrl>#branch-office</styleUrl>
+			<name>Okoboji, IA</name>
+			<description>Okoboji, IA</description>
+			<Point>
+				<coordinates>-95.13723529999999,43.3821495</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="branch-office_780">
+			<styleUrl>#branch-office</styleUrl>
+			<name>Sherburn, MN</name>
+			<description>Sherburn, MN</description>
+			<Point>
+				<coordinates>-94.72783219999997,43.6532336</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="branch-office_1777">
+			<styleUrl>#branch-office</styleUrl>
+			<name>Spirit Lake, IA</name>
+			<description>Spirit Lake, IA</description>
+			<Point>
+				<coordinates>-95.11015020000002,43.4226109</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="branch-office_1779">
+			<styleUrl>#branch-office</styleUrl>
+			<name>Wall Lake, IA</name>
+			<description>Wall Lake, IA</description>
+			<Point>
+				<coordinates>-95.09408289999999,42.2705204</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="branch-office_1780">
+			<styleUrl>#branch-office</styleUrl>
+			<name>Westbrook, MN</name>
+			<description>Westbrook, MN</description>
+			<Point>
+				<coordinates>-95.4360337,44.0424855</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="branch-office_1781">
+			<styleUrl>#branch-office</styleUrl>
+			<name>Windom, MN</name>
+			<description>Windom, MN</description>
+			<Point>
+				<coordinates>-95.11556129999997,43.8653918</coordinates>
+			</Point>
+		</Placemark>
+	
+	</Document>
+</kml>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+	<Document>
+		<Style id="drive-up-atm-Selected">
+			<IconStyle>
+				<Icon>
+					<href>https://www.bankmidwest.com/wp-content/themes/bankmidwest/images/kml/Pin_drive-up-atm-Selected.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id="drive-up-atm">
+			<IconStyle>
+				<Icon>
+					<href>https://www.bankmidwest.com/wp-content/themes/bankmidwest/images/kml/Pin_drive-up-atm.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+
+		<Placemark id="drive-up-atm_1778">
+			<styleUrl>#drive-up-atm</styleUrl>
+			<name>Armstrong, IA</name>
+			<description>Armstrong, IA</description>
+			<Point>
+				<coordinates>-94.48023060000003,43.3962387</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="drive-up-atm_739">
+			<styleUrl>#drive-up-atm</styleUrl>
+			<name>Fairmont, MN</name>
+			<description>Fairmont, MN</description>
+			<Point>
+				<coordinates>-94.4473898,43.6509483</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="drive-up-atm_395">
+			<styleUrl>#drive-up-atm</styleUrl>
+			<name>Jackson, MN</name>
+			<description>Jackson, MN</description>
+			<Point>
+				<coordinates>-94.98904600000003,43.621924</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="drive-up-atm_772">
+			<styleUrl>#drive-up-atm</styleUrl>
+			<name>New Ulm, MN</name>
+			<description>New Ulm, MN</description>
+			<Point>
+				<coordinates>-94.460015,44.311366</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="drive-up-atm_1775">
+			<styleUrl>#drive-up-atm</styleUrl>
+			<name>Okoboji, IA</name>
+			<description>Okoboji, IA</description>
+			<Point>
+				<coordinates>-95.13723529999999,43.3821495</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="drive-up-atm_780">
+			<styleUrl>#drive-up-atm</styleUrl>
+			<name>Sherburn, MN</name>
+			<description>Sherburn, MN</description>
+			<Point>
+				<coordinates>-94.72783219999997,43.6532336</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="drive-up-atm_1777">
+			<styleUrl>#drive-up-atm</styleUrl>
+			<name>Spirit Lake, IA</name>
+			<description>Spirit Lake, IA</description>
+			<Point>
+				<coordinates>-95.11015020000002,43.4226109</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="drive-up-atm_1779">
+			<styleUrl>#drive-up-atm</styleUrl>
+			<name>Wall Lake, IA</name>
+			<description>Wall Lake, IA</description>
+			<Point>
+				<coordinates>-95.09408289999999,42.2705204</coordinates>
+			</Point>
+		</Placemark>
+	
+		<Placemark id="drive-up-atm_1781">
+			<styleUrl>#drive-up-atm</styleUrl>
+			<name>Windom, MN</name>
+			<description>Windom, MN</description>
+			<Point>
+				<coordinates>-95.11556129999997,43.8653918</coordinates>
+			</Point>
+		</Placemark>
+	
+	</Document>
+</kml>

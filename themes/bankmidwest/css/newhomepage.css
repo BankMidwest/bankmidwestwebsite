@@ -1,0 +1,528 @@
+/* This is the stylesheet for the new homepage. */
+/* Mixins */
+/* Styles */
+body {
+  background: #fff !important;
+  font-family: 'ybRegular', Helvetica, sans-serif !important;
+  color: #333;
+}
+strong, h2, h3 {
+  font-family: 'ybBold', Helvetica, sans-serif;
+}
+/* Center content of regular legacy pages */
+.hm-content, .hm-content-white {
+  background: transparent !important;
+  margin: 0 auto;
+}
+/* Begin homepage styles */
+.black-top {
+  background: url('/wp-content/themes/bankmidwest/images/top_black.png') repeat-x top center;
+  background-color: #000;
+  height: 50px;
+}
+.black-top .inner {
+  max-width: 1000px;
+  width: 100%;
+}
+.black-top .inner #ancillary {
+  float: none;
+  margin-right: 0;
+  margin-left: 300px;
+  text-transform: none;
+}
+.black-top .inner #ancillary li {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+.black-top .inner #ancillary li:last-of-type {
+  float: right;
+}
+.black-top .inner #ancillary li:last-of-type #search {
+  top: 2px;
+}
+.black-top .inner #ancillary li:last-of-type #search input[type="text"] {
+  background: #000;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  color: #fff;
+}
+.black-top .inner #ancillary li:last-of-type #search input[type="submit"] {
+  background-color: #fff;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.black-top .inner #ancillary li a {
+  height: auto;
+  color: #b0b0b0;
+  text-transform: uppercase;
+}
+.black-top .inner #ancillary li a:hover {
+  color: #fff;
+}
+.black-top .inner #ancillary li ul li {
+  padding-right: 0;
+  height: auto;
+}
+.black-top .inner #ancillary li ul li:last-of-type {
+  float: none;
+}
+.inner {
+  width: 100%;
+}
+.navcontainer {
+  margin: 0 auto;
+  background: #511025;
+}
+.navcontainer .top-container {
+  float: none;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.navcontainer .top-container #logo {
+  top: -50px;
+  left: 0;
+  background-color: #eee;
+  padding: 35px 15px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 3px 3px 20px black;
+}
+.navcontainer .top-container #logo a {
+  background: url('/wp-content/themes/bankmidwest/images/new_logo.png') no-repeat center center;
+  background-size: contain;
+  height: 90px;
+  width: 250px;
+}
+.navcontainer #nav {
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: left;
+  padding-left: 283px;
+}
+.navcontainer #nav li a {
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+.navcontainer #nav li ul {
+  top: 65px;
+  right: auto;
+}
+.navcontainer #nav li ul.mega.two-col {
+  right: auto;
+}
+#main .inner .slider {
+  float: none;
+}
+#main .inner .slider .slider-main-image {
+  width: 100%;
+  background: url('/wp-content/themes/bankmidwest/images/homepage/banner.jpg');
+  background-position: top center;
+  background-size: cover;
+  height: 100%;
+  min-height: 623px;
+}
+#main .inner .slider .slider-main-image .overlay {
+  min-height: 623px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+#main .inner .slider .slider-main-image .overlay .slider-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+#main .inner .slider .slider-main-image .overlay .slider-inner .login-box {
+  background: #ccc;
+  top: 0;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  box-shadow: none;
+  padding: 8px;
+  width: 225px;
+}
+#main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content {
+  background: #eee;
+  border-radius: 5px;
+  padding: 8px;
+}
+#main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content h2 {
+  color: #666;
+  padding: 0.5em 0;
+  font-size: 16px;
+  text-transform: none;
+}
+#main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content input[type="text"] {
+  box-shadow: none;
+  background: transparent;
+  border: 2px solid #ccc;
+  margin-left: 5px;
+  width: 80%;
+  transition: 0.4s all;
+}
+#main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content input[type="text"]:active, #main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content input[type="text"]:focus, #main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content input[type="text"]:hover {
+  background: #ccc;
+}
+#main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content input[type="submit"] {
+  padding: 7px 10px;
+  background: #511025;
+  transition: 0.4s all;
+}
+#main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content input[type="submit"]:hover {
+  background: #156639;
+}
+#main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content label {
+  color: #666;
+  font-size: 14px;
+}
+#main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content p {
+  text-align: right;
+}
+#main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content p a {
+  color: #666;
+  margin-right: 5px;
+  transition: 0.4s all;
+}
+#main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content p a:hover {
+  color: #156639;
+  text-decoration: underline;
+}
+#main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content p.alert-message {
+  margin-top: 10px;
+  text-align: left;
+}
+#main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content table {
+  margin: 0.5em 0;
+}
+#main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content table td, #main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content table th {
+  padding: 0px;
+}
+#main .inner .slider .slider-main-image .overlay .banner-text {
+  display: flex;
+  width: 100%;
+  height: 623px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+#main .inner .slider .slider-main-image .overlay .banner-text h2 {
+  color: #fff;
+  text-transform: none;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+#main .inner .slider .slider-main-image .overlay .banner-text h3 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  font-family: 'ybRegular';
+}
+#main .inner .slider .slider-main-image .overlay .banner-text a.button {
+  padding: 10px 15px;
+  background: #54b948;
+  color: #fff;
+  font-size: 1.3em;
+  border-radius: 50px;
+  transition: 0.4s all;
+}
+#main .inner .slider .slider-main-image .overlay .banner-text a.button:hover {
+  opacity: 0.8;
+}
+#main .inner .slider .slider-main-image .overlay .dates {
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #fff;
+  padding: 40px;
+}
+#main .inner .slider .slider-main-image .overlay .dates .inner {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+#main .inner .slider .slider-main-image .overlay .dates .inner .dates-sep {
+  position: absolute;
+  left: -180px;
+  top: -100px;
+}
+#main .inner .slider .slider-main-image .overlay .dates .inner .dates-sep img {
+  max-width: 150px;
+}
+#main .inner .slider .slider-main-image .overlay .dates .inner h2 {
+  width: 100%;
+  color: #fff;
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+}
+#main .inner .slider .slider-main-image .overlay .dates .inner .date {
+  margin: 0px 30px;
+  flex: 1;
+}
+#main .inner .slider .slider-main-image .overlay .dates .inner .date h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #54b948;
+  margin-bottom: 0.3em;
+}
+#main .inner .how {
+  overflow: auto;
+}
+#main .inner .how .inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 40px;
+}
+#main .inner .how .inner h2 {
+  width: 100%;
+  font-size: 2.5em;
+  margin: 1em 0;
+  position: relative;
+}
+#main .inner .how .inner h2:before {
+  position: absolute;
+  content: ' ';
+  height: 3px;
+  background: #eee;
+  top: 14px;
+  width: 100%;
+  display: block;
+  z-index: -1;
+}
+#main .inner .how .inner h2 span {
+  background: #fff;
+  z-index: 1;
+  padding: 0px 50px;
+}
+#main .inner .how .inner .service {
+  width: 33.3%;
+  font-size: 16px;
+  margin: 30px 0px;
+}
+#main .inner .how .inner .service img {
+  width: 150px;
+  margin-bottom: 15px;
+}
+#main .inner .community {
+  background-color: #eee;
+  background-image: url('/wp-content/themes/bankmidwest/images/homepage/communitybg.png');
+  background-repeat: no-repeat;
+  background-position: -450px;
+}
+#main .inner .community .inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 40px 70px 40px;
+}
+#main .inner .community .inner h2 {
+  width: 100%;
+  font-size: 2.5em;
+  margin: 1em 0 0 0;
+  position: relative;
+  text-align: center;
+}
+#main .inner .community .inner h2:before {
+  position: absolute;
+  content: ' ';
+  height: 3px;
+  background: #ccc;
+  top: 14px;
+  width: 100%;
+  display: block;
+  z-index: 0;
+}
+#main .inner .community .inner h2 div {
+  z-index: 9999;
+  position: relative;
+}
+#main .inner .community .inner h2 div span {
+  background: #eee;
+  padding: 0px 50px;
+}
+#main .inner .community .inner h3 {
+  text-align: center;
+  margin: 0.5em 0 2em 0;
+  font-size: 2em;
+  color: #511025;
+  font-style: italic;
+  font-family: 'ybRegular';
+  line-height: 140%;
+}
+#main .inner .community .inner h3.principle {
+  margin: 1.5em 0 0 0;
+  font-style: normal;
+}
+#main .inner .community .inner p {
+  margin: 0 0 1em;
+  font-size: 18px;
+  line-height: 140%;
+}
+#main .inner .stats {
+  background-color: #333;
+  background-image: url('/wp-content/themes/bankmidwest/images/homepage/shakinghands.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+#main .inner .stats .overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 70px 0px;
+}
+#main .inner .stats .overlay .inner {
+  max-width: 1200px;
+  display: flex;
+}
+#main .inner .stats .overlay .inner .stat {
+  padding: 20px;
+  text-align: center;
+  flex: 1 0 auto;
+}
+#main .inner .stats .overlay .inner .stat .top {
+  text-transform: uppercase;
+  font-size: 20px;
+  display: block;
+  font-family: 'ybBold';
+}
+#main .inner .stats .overlay .inner .stat .amount {
+  text-transform: uppercase;
+  color: #54b948;
+  font-size: 42px;
+  display: block;
+  font-family: 'ybBold';
+  line-height: 140%;
+}
+#main .inner .stats .overlay .inner .stat .type {
+  font-size: 18px;
+  display: block;
+}
+#main .inner .hoh .site-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+#main .inner .hoh .site-inner h2 {
+  width: 100%;
+  font-size: 2.5em;
+  margin: 1em 0;
+  position: relative;
+  text-align: center;
+}
+#main .inner .hoh .site-inner h2:before {
+  position: absolute;
+  content: ' ';
+  height: 3px;
+  background: #eee;
+  top: 14px;
+  width: 100%;
+  display: block;
+  z-index: -1;
+}
+#main .inner .hoh .site-inner h2 span {
+  background: #fff;
+  z-index: 1;
+  padding: 0px 50px;
+}
+#main .inner .hoh .site-inner .col {
+  flex: 1;
+  padding: 30px;
+}
+#main .inner .hoh .site-inner .col .feat {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center center;
+  transition: 0.4s all;
+}
+#main .inner .hoh .site-inner .col .feat:hover {
+  opacity: 0.8;
+}
+#main .inner .hoh .site-inner .col h3 {
+  font-size: 2em;
+  margin: 1em 0;
+}
+#main .inner .hoh .site-inner .col p {
+  font-size: 18px;
+}
+/* Footer */
+.testingClass .inner-hm-content {
+  padding: 0px;
+}
+.testingClass .inner-hm-content #footer .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+}
+.testingClass .inner-hm-content #footer .container .footer-left {
+  color: #fff;
+  width: 750px;
+}
+.testingClass .inner-hm-content #footer .container .footer-left h2 {
+  font-family: 'ybRegular';
+  font-size: 2.5em;
+  margin: 0 0 0.5em 0;
+}
+.testingClass .inner-hm-content #footer .container .footer-left a {
+  color: #fff;
+  text-decoration: underline;
+}
+.testingClass .inner-hm-content #footer .container .footer-left a:hover {
+  text-decoration: none;
+}
+.testingClass .inner-hm-content #footer .container .footer-left p {
+  margin-bottom: 1.75em;
+}
+.testingClass .inner-hm-content #footer .container .footer-left p.contact-info {
+  line-height: 140%;
+  margin-bottom: 2em;
+  font-size: 16px;
+}
+.testingClass .inner-hm-content #footer .container #social {
+  float: right;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testingClass .inner-hm-content #footer .container #social img {
+  margin-bottom: 1.25em !important;
+  max-width: 150px;
+}
+.testingClass .inner-hm-content #footer .container #social img:last-of-type {
+  margin-bottom: 5em;
+}
+@media (max-width: 1250px) {
+  #main .inner .stats .overlay .inner {
+    flex-wrap: wrap;
+  }
+  #main .inner .stats .overlay .inner .stat {
+    flex: 1 30%;
+  }
+  .inner {
+    width: auto !important;
+  }
+  .testingClass .inner-hm-content #footer .container {
+    display: flex;
+  }
+  .testingClass .inner-hm-content #footer .container .footer-left {
+    width: 65%;
+    flex: 1 0 auto;
+  }
+  .testingClass .inner-hm-content #footer .container #social {
+    flex: 1 0 auto;
+  }
+}
