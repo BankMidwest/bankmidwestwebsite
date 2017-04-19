@@ -435,58 +435,9 @@ $oldquery = $wp_query;
 					<div class="slider-main-image">
                         <div class="overlay">
                         <div class="slider-inner">
-
-						<div class="login-box">
-							<!--<div id="login-select-wrap"><i></i>
-								<select class="select" id="login-select">
-									<option value="Banking" selected="selected">Online Banking</option>
-									<option value="Deposit">Online Deposit</option>
-									<option value="Credit" >Credit Card</option>
-									<option value="Prepaid" >Prepaid or Gift Card</option>
-									<option value="OtherServices" >Other Services</option>
-								</select>
-							</div>-->
-
-							<div id="login-content">
-
-							<div class="Banking active">
-								
-							<!--	<label for="user_id"></label><input type="text" name="user_id" placeholder="User ID"/> -->
-							<script type="text/javascript" src="https://tether.netteller.com/bankmidwest/login.js"></script>
-							<script type="text/javascript">
-								jQuery(document).ready(function(){
-									jQuery("form#login input[name='id']").focus();
-								});
-							</script>
-							<?php /*
-								<form name="login" id="login" class="wide" method="post" action="https://cm.netteller.com/login2008/Authentication/Views/Login.aspx?fi=bankmidwest&bn=6b588f49e093b599&burlid=0d7aa04f39c289b0">
-                                  <input type="hidden" name="pin" value="" />
-							      <h2>Online Banking Login</h2>
-							 
-							      <table>
-							        <tr>
-							          <td><label for="id">ID</label></td>
-							          <td><input name="id" size="13" type="text"></td>
-							 
-							          <td><input name="submit" value="Submit" type="submit" class="button"></td>
-							        </tr>
-							      </table>
-							    </form>
-								<?php /*<span class="submit"><a class="btn" href="https://cm.netteller.com/login2008/Authentication/Views/Login.aspx?fi=bankmidwest&bn=6b588f49e093b599&burlid=0d7aa04f39c289b0" target="_blank"/>Online Banking Login</a></span> */ ?>
-								
-								<p>
-									<a href="https://cm.netteller.com/login2008/enroll.aspx?fi=bankmidwest&bn=6b588f49e093b599&burlid=0d7aa04f39c289b0" target="_blank" class="enroll">Enroll Now</a>
-								</p>
-								<?php $alert = get_field('alert_message'); 
-                                    if ($alert) { ?>
-									<p class="alert-message">
-										<?php echo $alert; ?>
-									</p>
-								<?php } ?>
-							</div> 
-						</div>
-							</div><!--.login-box-->
-
+                        <div class="new-login-box">
+						  <iframe src="https://ib790.lanxtra.com/servlet/SLogin?template=/c/custom/rloginsc.vm"></iframe>
+                        </div>
 						</div><!--.inner-->
 						</div><!--.overlay-->
 
