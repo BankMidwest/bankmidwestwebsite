@@ -453,7 +453,7 @@ $oldquery = $wp_query;
                                         <img src="<?php bloginfo('stylesheet_directory'); ?>/images/homepage/impdates.png
                                         " />
                                     </div>
-                                    <h2>Important Dates</h2>
+                                    <h2>Important Information</h2>
                                     <div class="date">
                                         <h3><?php echo get_field('date_1'); ?></h3>
                                         <p><?php echo get_field('date_1_txt'); ?></p>
