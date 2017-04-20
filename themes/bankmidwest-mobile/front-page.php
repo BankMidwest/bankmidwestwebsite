@@ -11,8 +11,9 @@ get_header();
 			<div class="inner">
 				<div class="banner">
 					<div class="overlay">
-						<h2>A New Banking Experience Has Arrived</h2>
-						<h3>We've been working hard to make changes that will provide you with a faster, safer experience.</h3>
+						<h2><?php echo get_field('banner_heading'); ?></h2>
+                        <h3><?php echo get_field('banner_subhead'); ?></h3>
+                        <a class="button" href="<?php echo get_field('banner_button_url'); ?>"><?php echo get_field('banner_button_text'); ?></a>
 					</div>
 				</div>
 			<div class="slider">
@@ -135,6 +136,33 @@ get_header();
                             <div class="amount"><?php echo get_field('stat_4_amount'); ?></div>
                             <div class="type"><?php echo get_field('stat_1_type'); ?></div>
                         </div>
+					</div>
+					<div class="hoh">
+						<h2><span>News & Education</span></h2>
+	                    <?php // queue the hot topix
+
+	                    $topix_array = array('posts_per_page' => 3, 'post_type' => array('post', 'news'));
+	                    $topixloop = new WP_QUERY ($topix_array);
+
+	                    if ($topixloop->have_posts() ) :
+
+	                    while ($topixloop->have_posts() ) : $topixloop->the_post();
+	                    
+	                    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );?>   
+
+                            <div class="article">
+                                <a href="<?php the_permalink(); ?>">
+                                    <img src="<?php echo $thumb[0]; ?>" />
+                                </a>
+                                <div class="post-info">
+	                                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+	                                <p><?php the_date(); ?></p>
+	                            </div>
+	                            <div class="arrow"><a href="<?php the_permalink(); ?>"> > </a></div>
+                            </div>
+
+                        <?php endwhile; endif; wp_reset_query(); ?>
+	                    <div class="clear"></div>
 					</div>
 					<div class="hm-text">
     							

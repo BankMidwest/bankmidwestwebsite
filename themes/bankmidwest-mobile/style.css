@@ -136,6 +136,16 @@ a:hover {
 	margin: 0px auto;
 	font-size: 12px;
 }
+.home .overlay .button {
+    background-color: #54b948;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 15px;
+    position: relative;
+    top: 15px;
+}
 
 #nav > ul li {
 	display:inline-block;
@@ -418,6 +428,54 @@ div#cc_form_1 { float: none!important; width: auto!important;}
 }
 .hm-content .community-block p {
 	margin-bottom: 10px;
+}
+
+.hm-content .hoh {
+	margin: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding-bottom: 5px;
+}
+.hm-content .hoh h2 {
+	text-align: center;
+	background-color: #6b1b31;
+	color: white;
+	text-transform: uppercase;
+	padding: 10px;
+	font-size: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.hm-content .hoh .article {
+	clear: both;
+	padding: 15px 5px 15px 10px;
+}
+.hm-content .hoh .article img {
+	width: 120px;
+    float: left;
+    padding: 3px;
+    border: 1px solid #e5e5e5;
+}
+.hm-content .hoh .post-info {
+	display: flex;
+	flex-direction: column;
+	float: left;
+	width: 165px;
+}
+.hm-content .hoh a {
+	color: black;
+	text-decoration: underline;
+}
+.hm-content .post-info h3 {
+	margin-top: 25px;
+}
+.hm-content .post-info h3, .hm-content .post-info p {
+	margin-left: 5px;
+}
+.hm-content .hoh .arrow {
+	float:  right;
+	margin-top: 35px;
+	font-size: 17px;
 }
 
 .hm-content .stats-block {
