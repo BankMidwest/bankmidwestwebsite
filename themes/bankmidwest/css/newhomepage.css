@@ -219,6 +219,7 @@ strong, h2, h3 {
   text-transform: none;
   font-size: 3em;
   margin-bottom: 0.5em;
+  margin-top: 1.5em;
 }
 #main .inner .slider .slider-main-image .overlay .banner-text h3 {
   color: #fff;
