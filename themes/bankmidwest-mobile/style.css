@@ -666,6 +666,23 @@ img.contact-alternate {
 	color:#808080;
 }
 
+#footer .footer-top-links {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+.footer-top-links ul li {
+	list-style-type: none;
+}
+#footer .footer-top-links ul li a {
+	color: white;
+}
+.footer-top-links ul li:before {
+	content:url('https://www.bankmidwest.com/wp-content/themes/bankmidwest/images/arrow-green.png');
+	position: relative;
+	left: -10px;
+}
+
 .home .footer-left {
 	width: 72%;
 	display: inline-block;

@@ -37,6 +37,31 @@
 
 		<div id="footer">
 
+			<div class="footer-top-links">
+				<div class="left">
+					<ul>
+						<li><a href="<?php echo get_permalink(4); ?>"><span>Bank</span></a></li>
+						<li><a href="<?php echo get_permalink(18); ?>"><span>Borrow</span></a></li>
+						<li><a href="<?php echo get_permalink(7); ?>"><span>Insure</span></a></li>
+						<li><a href="<?php echo get_permalink(9); ?>"><span>Invest</span></a></li>
+						<li><a href="<?php echo get_permalink(7806); ?>"><span>Trust</span></a></li>
+					</ul>
+				</div>
+				<div class="middle">
+					<ul>
+						<li><a href="<?php echo get_permalink(21); ?>">Login</a></li>
+						<li><a href="<?php echo get_permalink(23); ?>">Locations/ATMs</a></li>
+						<li><a href="<?php echo get_permalink(29); ?>">About</a></li>
+						<li><a href="<?php echo get_permalink(14); ?>">Help</a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul>
+						<li><a href="http://www.bankmidwest.com/help/contact/">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+
 
 			<div class="footer-left">
 				<div id="copyright">
