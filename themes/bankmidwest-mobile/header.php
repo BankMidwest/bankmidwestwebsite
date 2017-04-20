@@ -76,106 +76,9 @@
 
 		<div id="header">
 
-            <nav id="ancillary" class="nav-menu">
-
-                <ul>
-                    <li<?php fh_check_active(4); ?>>
-                        <a href="<?php echo get_permalink(21); ?>" id="login">Login</a>
-                    </li>
-
-                    <li <?php fh_check_active(23); ?>>
-                        <a href="<?php echo get_permalink(23); ?>"  id="locations" ><span>Locations</span></a>
-                    </li>
-
-                    <li <?php fh_check_active(29); ?>>
-                        <a href="#" class='ancillary-menu-trigger' id="about" >
-                            <span>About</span>
-                        </a>
-                    </li>
-                    <li <?php fh_check_active(14); ?>>
-                        <a href="#" class='ancillary-menu-trigger' id="help">
-                            <span>Help</span>
-                        </a>
-                    </li>
-                </ul>
-
-                <div class='mobile-sub-menus'>
-                    <?php
-                            $about_children = wp_list_pages(array(
-                                'child_of'     => 29,
-                                'depth'        => 1,
-                                'echo'         => 0,
-                                'exclude'      => '',
-                                'link_after'   => '',
-                                'link_before'  => '',
-                                'post_type'    => 'page',
-                                'post_status'  => 'publish',
-                                'sort_order'   => 'menu_order',
-                                'title_li'     => '',
-                            ));
-                        ?>
-                    <ul class='sub-menu about'>
-                        <li class='head'>
-                            <a href="<?php echo get_permalink(29);?>">
-                                <span>About Home</span>
-                            </a>
-                        </li>
-                        <?php echo $about_children; wp_reset_postdata();?>
-                    </ul>
-
-                    <?php
-                        $help_children = wp_list_pages(array(
-                            'child_of'     => 14,
-                            'depth'        => 1,
-                            'echo'         => 0,
-                            'exclude'      => '',
-                            'link_after'   => '',
-                            'link_before'  => '',
-                            'post_type'    => 'page',
-                            'post_status'  => 'publish',
-                            'sort_order'   => 'menu_order',
-                            'title_li'     => '',
-                        ));
-                    ?>
-                    <ul class='sub-menu help'>
-                        <li class='head'>
-                            <a href="<?php echo get_permalink(14); ?>">
-                                <span>Help Home</span>
-                            </a>
-                        </li>
-                        <?php echo $help_children; wp_reset_postdata();?>
-                    </ul>
-                </div>
-
-            </nav>
-
         <div class="black-top">
 
-		<nav id="nav" class="nav-menu">
-
-			<ul>
-
-				<li<?php fh_check_active(4); ?>>
-					<a href="<?php echo get_permalink(4); ?>"  id="bank" ><span>Bank</span></a>
-				</li>
-
-				<li <?php fh_check_active(18); ?>>
-					<a href="<?php echo get_permalink(18); ?>"  id="borrow" ><span>Borrow</span></a>
-				</li>
-
-				<li <?php fh_check_active(7); ?>>
-					<a href="<?php echo get_permalink(7); ?>"  id="insure" ><span>Insure</span></a>
-				</li>
-
-				<li <?php fh_check_active(9); ?>>
-					<a href="<?php echo get_permalink(9); ?>"  id="plan"><span>Invest</span></a>
-				</li>
-
-				<li <?php fh_check_active(7806); ?>>
-					<a href="<?php echo get_permalink(7806); ?>"  id="trust"><span>Trust</span></a>
-				</li>
-
-			</ul>
+			<nav id="nav" class="nav-menu">
 
 			<div class="subpages">
 			<ul class="bank">
@@ -347,30 +250,6 @@
 
 			</div><!-- subpages -->
 
-
-               <?php /*
-				 <li id="link5">
-					<a href="<?php echo get_permalink(12); ?>"><span>Learn & Tools</span></a>
-				<!-- WP
-				<?php
-					$pages = NULL; $pages = wp_list_pages('child_of=12&depth=1&title_li=&echo=0');
-					if ($pages) {
-						echo '<ul>' . $pages . '</ul>';
-					} ?>
-				-->
-				</li>
-
-				<li id="link6">
-					<a href="<?php echo get_permalink(14); ?>"><span>Get Help</span></a>
-				<!-- WP
-				<?php
-					$pages = NULL; $pages = wp_list_pages('child_of=14&depth=1&title_li=&echo=0');
-					if ($pages) {
-						echo '<ul>' . $pages . '</ul>';
-					} ?>
-				-->
-				</li> */ ?>
-
             </nav><!-- #nav -->
 
 
@@ -380,14 +259,43 @@
 
 
 
-			<?php if (is_front_page()) $header_element = 'h1'; else $header_element = 'div';
+				<?php if (is_front_page()) $header_element = 'h1'; else $header_element = 'div';
 				echo '<' . $header_element . ' id="logo">'; ?>
 				<a href="<?php bloginfo('url'); ?>">
-	<img src="<?php bloginfo('stylesheet_directory'); ?>/images/bank-midwest-logo.png"/>
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/bank-midwest-logo.png"/>
 				</a>
-			<?php echo '</' . $header_element . '>'; ?>
+				<?php echo '</' . $header_element . '>'; ?>
+
+				<nav id="ancillary" class="top-nav-menu">
+
+	                <ul>
+	                    <li class="top-link">
+	                        <a href="<?php echo get_permalink(21); ?>" id="login">Login</a>
+	                    </li>
+	                    <li class="top-link">
+	                    	<a href="<?php echo esc_url( home_url( '/' ) );?>about-us/blog/">Blog</a>
+	                    </li>
+	                    <li id="search" style="display: none;">
+
+			                <form action="<?php bloginfo('url'); ?>/search/" id="cse-search-box">
+
+			                    <input type="hidden" name="cx" value="003074495176662961374:n2v17u_bwoi" />
+			                    <input type="hidden" name="cof" value="FORID:11" />
+
+			                    <input type="hidden" name="ie" value="UTF-8" />
+			          			<input type="submit" name="sa" value="Search" id="searchbutton" title="Search" />
+			                    <label class="input" style="display:none;">
+			                        <input type="text" id="searchfield" name="q" />
+			                    </label>
+
+			                    <input type="hidden" name="sa" value="Search" />
+			                    <div class="clear"></div>
+			                </form>
+			            </li><!-- #search -->
+	                </ul>
+
+	            </nav>
 
           </div><!--.top-container-->
-
 
         </div><!-- #header -->

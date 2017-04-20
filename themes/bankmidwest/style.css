@@ -2933,7 +2933,7 @@ body.page-template-page-bare-php #contactForm  {
 
 /* re-align the right edge of login-box */
 .home .login-box {
-    right:30px;
+    right:-60px;
 }
 
 /* Homepage Alert Boxes */
