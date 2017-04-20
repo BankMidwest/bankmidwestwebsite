@@ -58,6 +58,10 @@ a:hover {
 	margin: 10px auto;
 }
 
+.home .inner {
+	margin: 0px;
+}
+
 a {
 	color:#3d7614;
 }
@@ -82,7 +86,7 @@ a:hover {
 #logo a {
 	width: 100%;
 	display: inline-block;
-	padding: 10px 0px;
+	padding-top: 10px;
 	margin-left: 10px;
 }
 
@@ -105,6 +109,32 @@ a:hover {
 	background: -o-linear-gradient(top,  rgba(251,251,251,1) 0%,rgba(237,237,237,1) 100%);
 	background: -ms-linear-gradient(top,  rgba(251,251,251,1) 0%,rgba(237,237,237,1) 100%);
 	background: linear-gradient(to bottom,  rgba(251,251,251,1) 0%,rgba(237,237,237,1) 100%);
+}
+.home .banner {
+	width: 100%;
+    background: url(http://localhost/bankmidwest/wp-content/themes/bankmidwest/images/homepage/banner.jpg);
+    background-position: top center;
+    background-size: cover;
+    height: 100%;
+    min-height: 200px;
+}
+.home .overlay {
+	min-height: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.home .overlay h2 {
+	padding: 28% 0px 5px 0px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.home .overlay h3 {
+	font-weight: normal;
+	width: 77%;
+	margin: 0px auto;
+	font-size: 12px;
 }
 
 #nav > ul li {
@@ -305,6 +335,110 @@ div#cc_form_1 { float: none!important; width: auto!important;}
 
 .hm-content {
 	background-color: #FFF;
+}
+.hm-content .important-info {
+	padding: 35px 35px 25px;
+}
+.hm-content .important-info h2 {
+	text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.hm-content .step-block {
+	margin-top: 10px;
+	border-bottom: 3px solid #e5e5e5;
+	padding: 0px 10px 10px;
+}
+.hm-content .step-block:last-of-type {
+	border-bottom: none;
+}
+.step-block h3 {
+	color: #54b948;
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+.step-block .home-contact {
+	font-weight: bold;
+}
+
+.home-help {
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	margin: 5px;
+	display: flex;
+	flex-direction: column;
+	font-size: 15px;
+}
+.home-help h2 {
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	background-color: #6b1b31;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.home-help .service {
+	clear: both;
+	padding: 6px;
+	border-top: 1px solid #e5e5e5;
+}
+.home-help .service a {
+	color: #4d4d4d;
+	font-weight: bold;
+}
+.home-help .service .arrow {
+	float: right;
+	color: #4d4d4d;
+}
+.home-help .service p {
+	float: left;
+}
+
+.hm-content .community-block {
+	margin: 20px;
+}
+.hm-content .community-block h2 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+.hm-content .community-block h3 {
+	font-style: italic;
+	color: #6b1b31;
+	font-weight: normal;
+}
+.hm-content .community-block h3.subhead {
+	font-size: 16px;
+	margin: 5px 0px 15px;
+	text-align: center;
+	font-weight: bold;
+}
+.hm-content .community-block p {
+	margin-bottom: 10px;
+}
+
+.hm-content .stats-block {
+	text-align: center;
+	padding: 0px 30px;
+}
+.hm-content .stats-block .stat {
+    padding: 30px;
+    border-bottom: 3px solid #e5e5e5;
+}
+.hm-content .stats-block .stat:last-of-type {
+	border-bottom: none;
+}
+.hm-content .stats-block .top {
+	font-weight: bold;
+	font-size: 18px;
+}
+.hm-content .stats-block .amount {
+	font-weight: bold;
+	font-size: 30px;
+	color: #54b948;
 }
 
 .hm-content.content-wide
