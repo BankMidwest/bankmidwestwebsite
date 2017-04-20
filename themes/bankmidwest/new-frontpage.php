@@ -471,7 +471,7 @@ $oldquery = $wp_query;
                         </div><!--.overlay-->
                         </div><!--.slider-main-image-->
 					</div><!--.slider-->
-			     </div><!--.inner-->
+			     
             
             <div class='clear'></div>
             <div class="how">
