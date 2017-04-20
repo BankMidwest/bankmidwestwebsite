@@ -340,6 +340,7 @@ div#cc_form_1 { float: none!important; width: auto!important;}
 
 .inner-hm-content {
 	padding: 0 10px;
+	margin-bottom: -1px;
 	/*background:url(images/bg-mainarea.jpg) repeat-y center center;*/
 }
 
@@ -665,10 +666,28 @@ img.contact-alternate {
 	color:#808080;
 }
 
-.footer-left {
+.home .footer-left {
+	width: 72%;
+	display: inline-block;
+	font-size: 10px;
+}
+.home .footer-bottom-links {
+	margin-left: 14px;
+}
+.home #copyright p.copyright {
+	font-weight: bold;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 0px;
 }
 
-#hippo {
+.home .footer-right {
+	width: 25%;
+	float: right;
+}
+
+.home #hippo {
+	display: none;
 }
 
 #hippo .left, #hippo .middle, #hippo .right {
@@ -1022,7 +1041,8 @@ a.sidebtn { display: block; margin: 0 auto; box-shadow: inset 0 -3px 3px rgba(0,
 /* Social */
 
 #social {
-/*	padding-left:18px;*/
+	background-color: #54b948;
+	padding-left:10px;
 }
 
 ul.connect-icons li {
@@ -1049,27 +1069,27 @@ ul.connect-icons li {
 }
 
 #social li#social-facebook a {
-	background-position: 2px top;
+	background-position: 2px bottom;
 }
 
 #social li#social-rss a
 {
-	background-position: -30px top;
+	background-position: -30px bottom;
 }
 
 #social li#social-twitter a
 {
-	background-position: -65px top;
+	background-position: -65px bottom;
 }
 
 #social li#social-linkedin a
 {
-	background-position: -98px top;
+	background-position: -98px bottom;
 }
 
 #social li#social-email a
 {
-	background-position:  -135px top;
+	background-position:  -135px bottom;
 }
 
 
@@ -1104,6 +1124,16 @@ ul.connect-icons li {
 
 #social span {
 	display:none;
+}
+.to-top {
+    background-color: white;
+    padding: 5px;
+    margin: 0px 10px;
+}
+.to-top a {
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 #copyright {
