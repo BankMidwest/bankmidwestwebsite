@@ -164,16 +164,12 @@ get_header();
                         <?php endwhile; endif; wp_reset_query(); ?>
 	                    <div class="clear"></div>
 					</div>
+					<a href="<?php echo esc_url( home_url( '/' ) );?>about-us/blog/" ><div class="all-news">View All News</div></a>
+					<div class="home-search">
+					</div>
 					<div class="hm-text">
-    							
-							
-								</br>
-								</br>
-
-					<?php the_content();  ?>
-
-
-				</div><!--.hm-text-->
+						<?php the_content();  ?>
+					</div><!--.hm-text-->
 
 
 				<?php get_sidebar('home') ?>

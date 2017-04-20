@@ -479,6 +479,17 @@ div#cc_form_1 { float: none!important; width: auto!important;}
 	font-size: 17px;
 }
 
+.hm-content .all-news {
+	text-align: center;
+	background-color: #e6e6e6;
+	color: #4d4d4d;
+	border: 1px solid #d4d4d4;
+	margin: 5px 10px;
+	padding: 7px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
 .hm-content .stats-block {
 	text-align: center;
 	padding: 0px 30px;
