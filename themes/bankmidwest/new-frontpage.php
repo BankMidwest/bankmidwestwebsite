@@ -434,41 +434,41 @@ $oldquery = $wp_query;
 			     <div class="slider">
 					<div class="slider-main-image">
                         <div class="overlay">
-                        <div class="slider-inner">
-                        <div class="new-login-box">
-						  <iframe src="https://ib790.lanxtra.com/servlet/SLogin?template=/c/custom/rloginsc.vm"></iframe>
-                        </div>
-						</div><!--.inner-->
-						</div><!--.overlay-->
+                            <div class="slider-inner">
+                                <div class="new-login-box">
+						          <iframe src="https://ib790.lanxtra.com/servlet/SLogin?template=/c/custom/rloginsc.vm"></iframe>
+                                </div>
+						    </div><!--.inner-->
+						
 
-                        <div class="banner-text">
-                            <h2><?php echo get_field('banner_heading'); ?></h2>
-                            <h3><?php echo get_field('banner_subhead'); ?></h3>
-                            <a class="button" href="<?php echo get_field('banner_button_url'); ?>"><?php echo get_field('banner_button_text'); ?></a>
-                        </div>
+                            <div class="banner-text">
+                                <h2><?php echo get_field('banner_heading'); ?></h2>
+                                <h3><?php echo get_field('banner_subhead'); ?></h3>
+                                <a class="button" href="<?php echo get_field('banner_button_url'); ?>"><?php echo get_field('banner_button_text'); ?></a>
+                            </div>
 
-                        <div class="dates">
-                            <div class="inner">
-                                <div class="dates-sep">
-                                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/homepage/impdates.png
-                                    " />
-                                </div>
-                                <h2>Important Dates</h2>
-                                <div class="date">
-                                    <h3><?php echo get_field('date_1'); ?></h3>
-                                    <p><?php echo get_field('date_1_txt'); ?></p>
-                                </div>
-                                <div class="date">
-                                    <h3><?php echo get_field('date_2'); ?></h3>
-                                    <p><?php echo get_field('date_2_text'); ?></p>
-                                </div>
-                                <div class="date">
-                                    <h3><?php echo get_field('date_3'); ?></h3>
-                                    <p><?php echo get_field('date_3_txt'); ?></p>
+                            <div class="dates">
+                                <div class="inner">
+                                    <div class="dates-sep">
+                                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/homepage/impdates.png
+                                        " />
+                                    </div>
+                                    <h2>Important Dates</h2>
+                                    <div class="date">
+                                        <h3><?php echo get_field('date_1'); ?></h3>
+                                        <p><?php echo get_field('date_1_txt'); ?></p>
+                                    </div>
+                                    <div class="date">
+                                        <h3><?php echo get_field('date_2'); ?></h3>
+                                        <p><?php echo get_field('date_2_text'); ?></p>
+                                    </div>
+                                    <div class="date">
+                                        <h3><?php echo get_field('date_3'); ?></h3>
+                                        <p><?php echo get_field('date_3_txt'); ?></p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
+                        </div><!--.overlay-->
                         </div><!--.slider-main-image-->
 					</div><!--.slider-->
 			     </div><!--.inner-->
