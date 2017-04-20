@@ -447,7 +447,8 @@ div#cc_form_1 { float: none!important; width: auto!important;}
     border-top-right-radius: 5px;
 }
 .hm-content .hoh .article {
-	clear: both;
+	height: 90px;
+	border-top: 1px solid #e5e5e5;
 	padding: 15px 5px 15px 10px;
 }
 .hm-content .hoh .article img {
