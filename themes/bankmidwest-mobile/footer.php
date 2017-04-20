@@ -1,7 +1,66 @@
+		<div class="to-top">
+			<a href="#top">Top ^</a>
+		</div>
+		<div id="social">
+			<ul class="connect-icons">
+				<?php
+				if ( $footer == 'footer_invest') { ?>
+					<li></li>
+				<?php } else { ?>
+				<li id="social-facebook">
+                    <a href="https://www.facebook.com/BankMidwest" target="_blank"><span>Facebook</span>
+                    </a>
+                </li>
+				<li id="social-twitter">
+                    <a href="https://twitter.com/bankmidwest" target="_blank">
+                        <span>Twitter</span>
+                    </a>
+                </li>
+                <li id="social-linkedin">
+                    <a href="http://www.linkedin.com/company/bank-midwest" target="_blank" title="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
+
+				<li id="social-rss">
+                    <a href="<?php bloginfo('rss2_url'); ?>" target="_blank">
+                        <span>RSS</span>
+                    </a>
+                </li>
+				<li id="social-email">
+                    <a href="<?php echo get_permalink(823); ?>" title="Sign up for our Weekly Market Update"><span>Newsletter</span>
+                    </a>
+                </li>
+                <?php } ?>
+			</ul>
+		</div><!--#social-->
+
 		<div id="footer">
-			<ul id="ancillary" class="nav-menu">
-				<li><a href="#top">Back to Top</a></li>
-            </ul><!-- #ancillary -->
+
+			<div class="footer-top-links">
+				<div class="left">
+					<ul>
+						<li><a href="<?php echo get_permalink(4); ?>"><span>Bank</span></a></li>
+						<li><a href="<?php echo get_permalink(18); ?>"><span>Borrow</span></a></li>
+						<li><a href="<?php echo get_permalink(7); ?>"><span>Insure</span></a></li>
+						<li><a href="<?php echo get_permalink(9); ?>"><span>Invest</span></a></li>
+						<li><a href="<?php echo get_permalink(7806); ?>"><span>Trust</span></a></li>
+					</ul>
+				</div>
+				<div class="middle">
+					<ul>
+						<li><a href="<?php echo get_permalink(21); ?>">Login</a></li>
+						<li><a href="<?php echo get_permalink(23); ?>">Locations/ATMs</a></li>
+						<li><a href="<?php echo get_permalink(29); ?>">About</a></li>
+						<li><a href="<?php echo get_permalink(14); ?>">Help</a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul>
+						<li><a href="http://www.bankmidwest.com/help/contact/">Contact</a></li>
+					</ul>
+				</div>
+			</div>
 
 
 			<div class="footer-left">
@@ -50,33 +109,45 @@
 
 			<?php
 
-			if ($footer != 'footer_home'  && $footer != 'footer_invest' ) { ?>
+			if ( $footer != 'footer_home' ) {
 
-				<a href="/">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+				if ($footer != 'footer_home'  && $footer != 'footer_invest' ) { ?>
 
-			<?php }
+					<a href="/">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 
-			if ($footer != 'footer_invest' ) { ?>
+				<?php }
 
-				<a href="<?php echo get_permalink(529); ?>">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?php echo get_permalink(532); ?>">Customer ID Policy</a>
+				if ($footer != 'footer_invest' ) { ?>
 
-			<?php }
+					<a href="<?php echo get_permalink(529); ?>">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?php echo get_permalink(532); ?>">Customer ID Policy</a>
 
-			if (($footer == 'footer_home') || ($footer == 'footer_bank') || ($post->post_type=='news') || ($post->post_type=='post')) { ?>
+				<?php }
 
-				&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?php echo get_permalink(535); ?>">Equal Housing Lender Disclosure</a>
+				if (($footer == 'footer_home') || ($footer == 'footer_bank') || ($post->post_type=='news') || ($post->post_type=='post')) { ?>
 
-			<?php }
+					&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?php echo get_permalink(535); ?>">Equal Housing Lender Disclosure</a>
 
-			if ( $footer == 'footer_invest') { ?>
+				<?php }
 
-				<a href="https://www.siionline.com/public/forms/sii_madv6130a.pdf">SII Privacy Policy</a></br></br></br>
+				if ( $footer == 'footer_invest') { ?>
+
+					<a href="https://www.siionline.com/public/forms/sii_madv6130a.pdf">SII Privacy Policy</a></br></br></br>
+
+				<?php } ?>
+
+				</p>
+
+			<?php } else { ?>
+
+				<ul class="footer-bottom-links">
+					<li><a href="<?php echo get_permalink(529); ?>">Privacy Policy</a></li>
+					<li><a href="<?php echo get_permalink(532); ?>">Customer ID Policy</a></li>
+					<li><a href="<?php echo get_permalink(535); ?>">Equal Housing Lender Disclosure</a></li>
+				</ul>
 
 			<?php } ?>
 
-			</p>
-
-				<p>
+				<p <?php if($footer=='footer_home'){ echo "class='copyright'"; }?>>
 
 					<?php if ( $footer == 'footer_invest' ) { ?>
 
@@ -84,11 +155,19 @@
 
 			<?php } ?>
 
+			<?php if ( $footer == 'footer_home' ) { ?>
+
+				<span>&copy;<?php echo date('Y'); ?> Bank Midwest. All Rights Reserved.</span><br />
+
+			<?php } else { ?>
+
 				Copyright &copy;<?php echo date('Y'); ?> Bank Midwest  |  All Rights Reserved.<br />
+
+			<?php } ?>
 
 			<?php
 
-			if (($footer == 'footer_home') || ($footer == 'footer_bank') || ($post->post_type=='news') || ($post->post_type=='post')) { ?>
+			if (/*($footer == 'footer_home') || */($footer == 'footer_bank') || ($post->post_type=='news') || ($post->post_type=='post')) { ?>
 				<?php	if ($footer != 'footer_insure') { ?>
 					Member FDIC  | <img src="<?php bloginfo('stylesheet_directory'); ?>/images/house.png" width="21" height="18" /> Equal Housing Lender
 				<?php } ?>
@@ -105,43 +184,19 @@
 					<div class="right"><a href="http://www.flyinghippo.com" target="_blank">by Flying Hippo</a></div>
 				</div><!--.hippo-->
 
-				</div><!--.footer-left-->
+			</div><!--.footer-left-->
 
-			<div id="social">
-				<ul class="connect-icons">
-					<?php
-					if ( $footer == 'footer_invest') { ?>
-						<li></li>
-					<?php } else { ?>
-					<li id="social-facebook">
-                        <a href="https://www.facebook.com/BankMidwest" target="_blank"><span>Facebook</span>
-                        </a>
-                    </li>
-					<li id="social-twitter">
-                        <a href="https://twitter.com/bankmidwest" target="_blank">
-                            <span>Twitter</span>
-                        </a>
-                    </li>
-                    <li id="social-linkedin">
-                        <a href="http://www.linkedin.com/company/bank-midwest" target="_blank" title="LinkedIn">
-                            <span>LinkedIn</span>
-                        </a>
-                    </li>
-
-					<li id="social-rss">
-                        <a href="<?php bloginfo('rss2_url'); ?>" target="_blank">
-                            <span>RSS</span>
-                        </a>
-                    </li>
-					<li id="social-email">
-                        <a href="<?php echo get_permalink(823); ?>" title="Sign up for our Weekly Market Update"><span>Newsletter</span>
-                        </a>
-                    </li>
-                    <?php } ?>
-				</ul>
-			</div><!--#social-->
-
-
+			<div class="footer-right">
+				<a href="https://www.moneypass.com/atm-locator.html">
+                    <img src="<?php esc_url( home_url('/') ); ?>wp-content/themes/bankmidwest/images/homepage/moneypass.png" />
+                </a>
+                <a href="http://itunes.apple.com/us/app/bank-midwest-mobile/id533868909?mt=8">
+                    <img src="<?php esc_url( home_url('/') ); ?>wp-content/themes/bankmidwest/images/homepage/appstore-apple.png" />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.fi6235.godough">
+                    <img src="<?php esc_url( home_url('/') ); ?>wp-content/themes/bankmidwest/images/homepage/appstore-google.png" />
+                </a>
+			</div>
 
         </div><!-- #footer -->
 

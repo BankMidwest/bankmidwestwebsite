@@ -179,9 +179,9 @@ get_header();
 		                    <div class="clear"></div>
 		                </form>
 					</div>
-					<div class="hm-text">
+					<!--<div class="hm-text">
 						<?php the_content();  ?>
-					</div><!--.hm-text-->
+					</div>--><!--.hm-text-->
 
 
 				<?php //get_sidebar('home') ?>
