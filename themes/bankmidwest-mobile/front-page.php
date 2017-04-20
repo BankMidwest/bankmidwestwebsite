@@ -166,13 +166,25 @@ get_header();
 					</div>
 					<a href="<?php echo esc_url( home_url( '/' ) );?>about-us/blog/" ><div class="all-news">View All News</div></a>
 					<div class="home-search">
+						<form action="<?php bloginfo('url'); ?>/search/" id="cse-search-box">
+
+		                    <input type="hidden" name="cx" value="003074495176662961374:n2v17u_bwoi" />
+		                    <input type="hidden" name="cof" value="FORID:11" />
+
+		                    <input type="hidden" name="ie" value="UTF-8" />
+		                    <input type="text" id="searchfield" name="q" />
+		          			<input type="submit" name="sa" value="Search" id="searchbutton" title="Search" />
+
+		                    <input type="hidden" name="sa" value="Search" />
+		                    <div class="clear"></div>
+		                </form>
 					</div>
 					<div class="hm-text">
 						<?php the_content();  ?>
 					</div><!--.hm-text-->
 
 
-				<?php get_sidebar('home') ?>
+				<?php //get_sidebar('home') ?>
 
 				</div><!--.hm-content-->
 				
