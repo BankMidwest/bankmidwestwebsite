@@ -436,7 +436,7 @@ $oldquery = $wp_query;
                         <div class="overlay">
                             <div class="slider-inner">
                                 <div class="new-login-box">
-						          <iframe src="https://ib790.lanxtra.com/servlet/SLogin?template=/c/custom/rloginsc.vm"></iframe>
+						          <iframe src="https://online.bankmidwest.com/servlet/SLogin?template=/c/custom/rloginsc.vm"></iframe>
                                 </div>
 						    </div><!--.inner-->
 						
@@ -450,8 +450,7 @@ $oldquery = $wp_query;
                             <div class="dates">
                                 <div class="inner">
                                     <div class="dates-sep">
-                                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/homepage/impdates.png
-                                        " />
+                                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/homepage/impdates.png" />
                                     </div>
                                     <h2>Important Dates</h2>
                                     <div class="date">
