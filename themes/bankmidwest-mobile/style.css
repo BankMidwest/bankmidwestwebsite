@@ -218,6 +218,9 @@ nav#ancillary ul li.top-link a {
     position: relative;
     top: 2px;
 }
+nav#ancillary ul li.top-link.search-link {
+    border-right: none;
+}
 
 nav#ancillary ul li a {
 	display: block;
