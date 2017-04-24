@@ -1,5 +1,5 @@
 		<div class="to-top">
-			<a href="#top">Top ^</a>
+			<a href="#top" name="bottom">Top ^</a>
 		</div>
 		<div id="social">
 			<ul class="connect-icons">
@@ -58,6 +58,8 @@
 				<div class="right">
 					<ul>
 						<li><a href="http://www.bankmidwest.com/help/contact/">Contact</a></li>
+						<li id="social-email"><a href="<?php echo get_permalink(823); ?>" title="Sign up for our Weekly Market Update"><span>Newsletter</span></a></li>
+						<li id="phone-icon"><a href="tel:888-902-5662"><span>888.902.5662</span></a></li>
 					</ul>
 				</div>
 			</div>
@@ -193,7 +195,7 @@
                 <a href="http://itunes.apple.com/us/app/bank-midwest-mobile/id533868909?mt=8">
                     <img src="<?php esc_url( home_url('/') ); ?>wp-content/themes/bankmidwest/images/homepage/appstore-apple.png" />
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=com.fi6235.godough">
+                <a href="https://play.google.com/store/apps/details?id=com.malauzai.DH16163">
                     <img src="<?php esc_url( home_url('/') ); ?>wp-content/themes/bankmidwest/images/homepage/appstore-google.png" />
                 </a>
 			</div>

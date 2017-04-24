@@ -112,7 +112,7 @@ a:hover {
 }
 .home .banner {
 	width: 100%;
-    background: url(http://localhost/bankmidwest/wp-content/themes/bankmidwest/images/homepage/banner.jpg);
+    background: url(http://staging.bankmidwest.com/wp-content/themes/bankmidwest/images/homepage/banner.jpg);
     background-position: top center;
     background-size: cover;
     height: 100%;
@@ -217,6 +217,10 @@ nav#ancillary ul li.top-link {
 nav#ancillary ul li a {
 	display: block;
 	padding: 2px 5px;
+}
+
+.top-nav-menu .search-link img {
+    height: 16px;
 }
 
 #ancillary li ul.subpages {
@@ -1080,7 +1084,7 @@ ul.connect-icons li {
     width: 33px;
 }
 
-.home #social ul li a {
+.home #social ul li a, .footer-top-links .right li#social-email a {
 	background: url("images/social-sprite.png") no-repeat scroll left 0 transparent;
 	transition: none;
 }
@@ -1104,12 +1108,31 @@ ul.connect-icons li {
 	background-position: -98px bottom;
 }
 
-#social li#social-email a
+#social li#social-email a, .footer-top-links .right li#social-email a
 {
 	background-position:  -135px bottom;
 }
 
-
+.footer-top-links .right li#social-email a {
+	display: block;
+    height: 23px;
+    position: relative;
+    background-position: -135px bottom;
+    top: -13px;
+}
+.footer-top-links .right li#phone-icon a {
+    background: url(images/phone.png) no-repeat scroll left 0 transparent;
+    transition: none;
+    display: block;
+    height: 28px;
+    background-size: contain;
+    position: relative;
+    top: -22px;
+    left: 9px;
+}
+.footer-top-links .right ul li#social-email a:before {
+	content: none;
+}
 
 
 #social li#social-facebook a:hover
@@ -1139,7 +1162,7 @@ ul.connect-icons li {
 
 
 
-#social span {
+#social span, .footer-top-links .right li#social-email span, .footer-top-links .right li#phone-icon span {
 	display:none;
 }
 .to-top {

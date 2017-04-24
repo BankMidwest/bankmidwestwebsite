@@ -127,7 +127,7 @@
                         <a href="http://itunes.apple.com/us/app/bank-midwest-mobile/id533868909?mt=8">
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/images/homepage/appstore-apple.png" />
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.fi6235.godough">
+                        <a href="https://play.google.com/store/apps/details?id=com.malauzai.DH16163">
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/images/homepage/appstore-google.png" />
                         </a>
 
