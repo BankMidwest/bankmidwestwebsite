@@ -1127,6 +1127,7 @@ ul.connect-icons li {
     position: relative;
     background-position: -135px bottom;
     top: -13px;
+    left: 6px;
 }
 .footer-top-links .right li#phone-icon a {
     background: url(images/phone.png) no-repeat scroll left 0 transparent;
@@ -1136,7 +1137,7 @@ ul.connect-icons li {
     background-size: contain;
     position: relative;
     top: -22px;
-    left: 9px;
+    left: 10px;
 }
 .footer-top-links .right ul li#social-email a:before {
 	content: none;
