@@ -1198,6 +1198,21 @@ background: linear-gradient(to bottom,  #e8e0d6 0%,#c2bcb4 87%,#c2bcb4 100%); /*
 	padding:10px 40px 10px 60px;
 }
 
+.home iframe {
+	height: 248px;
+	width: 260px;
+	position: relative;
+	border-left: none;
+	margin-left: -12px;
+	border-top: none;
+}
+.new-login-box {
+	position: absolute;
+	right: -70px;
+	width: 260px;
+	overflow: hidden;
+	height: 250px;
+}
 .login-box { width:187px; position:absolute; top:60px; right:25px; z-index: 100;  border-radius: 10px; padding: 20px; box-shadow: 0 0 5px rgba(0,0,0,.5); background: #d3cac1;}
 .login-box table, .login-box td
 {
@@ -2918,7 +2933,7 @@ body.page-template-page-bare-php #contactForm  {
 
 /* re-align the right edge of login-box */
 .home .login-box {
-    right:30px;
+    right:-60px;
 }
 
 /* Homepage Alert Boxes */

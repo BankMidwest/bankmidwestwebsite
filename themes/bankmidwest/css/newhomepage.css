@@ -147,7 +147,7 @@ strong, h2, h3 {
   border-top-left-radius: 0px;
   box-shadow: none;
   padding: 8px;
-  width: 225px;
+  width: 270px;
 }
 #main .inner .slider .slider-main-image .overlay .slider-inner .login-box #login-content {
   background: #eee;
@@ -219,6 +219,7 @@ strong, h2, h3 {
   text-transform: none;
   font-size: 3em;
   margin-bottom: 0.5em;
+  margin-top: 1.5em;
 }
 #main .inner .slider .slider-main-image .overlay .banner-text h3 {
   color: #fff;
