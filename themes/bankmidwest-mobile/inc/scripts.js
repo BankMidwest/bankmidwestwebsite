@@ -1,9 +1,9 @@
-$(document).ready(function() {
+jQuery(document).ready(function() {
 
     /*  smartbanner App Store alert 
         -------------------------------------------------- */
     setInterval(function(){
-        $.smartbanner({
+        jQuery.smartbanner({
             title: 'Bank Midwest Mobile App',
             speedIn: 500,
             speedOut: 500
