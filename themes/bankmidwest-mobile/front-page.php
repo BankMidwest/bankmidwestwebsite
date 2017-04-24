@@ -10,7 +10,7 @@ get_header();
 		<div id="main" class="home">
 			<div class="inner">
 				<div class="banner">
-					<div class="overlay">
+					<div class="overlay" style="background: url(<?php echo get_field('banner_image'); ?>) no-repeat top center; background-size: cover;">
 						<h2><?php echo get_field('banner_heading'); ?></h2>
                         <h3><?php echo get_field('banner_subhead'); ?></h3>
                         <a class="button" href="<?php echo get_field('banner_button_url'); ?>"><?php echo get_field('banner_button_text'); ?></a>

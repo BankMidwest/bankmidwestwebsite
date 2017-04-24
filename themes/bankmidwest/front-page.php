@@ -9,7 +9,7 @@ $oldquery = $wp_query;
 		<div id="main">
 			<div class="inner">
 			     <div class="slider">
-					<div class="slider-main-image">
+					<div class="slider-main-image" style="background: url(<?php echo get_field('banner_image'); ?>">
                         <div class="overlay">
                             <div class="slider-inner">
 
