@@ -214,6 +214,11 @@ nav#ancillary ul li  {
 nav#ancillary ul li.top-link {
 	border-right: solid 1px #6b1b31;
 }
+nav#ancillary ul li.top-link a {
+    position: relative;
+    top: 2px;
+}
+
 nav#ancillary ul li a {
 	display: block;
 	padding: 2px 5px;
