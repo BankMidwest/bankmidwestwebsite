@@ -29,7 +29,9 @@
     <title><?php wp_title(''); ?></title>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); echo '?v=2'; ?>" />
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/style-print.css" media="print">
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/newhomepage.css" />
+    <?php if ( is_front_page() ) { ?>
+        <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/newhomepage.css" />
+    <?php } ?>
 
     <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
