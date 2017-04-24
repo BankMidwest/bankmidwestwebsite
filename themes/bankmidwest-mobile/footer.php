@@ -58,6 +58,8 @@
 				<div class="right">
 					<ul>
 						<li><a href="http://www.bankmidwest.com/help/contact/">Contact</a></li>
+						<li id="social-email"><a href="<?php echo get_permalink(823); ?>" title="Sign up for our Weekly Market Update"><span>Newsletter</span></a></li>
+						<li id="phone-icon"><a href="tel:888-902-5662"><span>888.902.5662</span></a></li>
 					</ul>
 				</div>
 			</div>

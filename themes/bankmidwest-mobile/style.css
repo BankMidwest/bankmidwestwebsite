@@ -1080,7 +1080,7 @@ ul.connect-icons li {
     width: 33px;
 }
 
-.home #social ul li a {
+.home #social ul li a, .footer-top-links .right li#social-email a {
 	background: url("images/social-sprite.png") no-repeat scroll left 0 transparent;
 	transition: none;
 }
@@ -1104,12 +1104,27 @@ ul.connect-icons li {
 	background-position: -98px bottom;
 }
 
-#social li#social-email a
+#social li#social-email a, .footer-top-links .right li#social-email a
 {
 	background-position:  -135px bottom;
 }
 
-
+.footer-top-links .right li#social-email a {
+	display: block;
+    height: 23px;
+    position: relative;
+    background-position: -135px bottom;
+    top: -13px;
+}
+.footer-top-links .right li#phone-icon a {
+	background: url("images/phone.png") no-repeat scroll left 0 transparent;
+	transition: none;
+	display: block;
+	height: 30px;
+}
+.footer-top-links .right ul li#social-email a:before {
+	content: none;
+}
 
 
 #social li#social-facebook a:hover
@@ -1139,7 +1154,7 @@ ul.connect-icons li {
 
 
 
-#social span {
+#social span, .footer-top-links .right li#social-email span, .footer-top-links .right li#phone-icon span {
 	display:none;
 }
 .to-top {
