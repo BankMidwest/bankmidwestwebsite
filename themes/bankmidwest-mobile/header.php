@@ -275,6 +275,9 @@
 	                    <li class="top-link">
 	                    	<a href="<?php echo esc_url( home_url( '/' ) );?>about-us/blog/">Blog</a>
 	                    </li>
+	                    <li class="top-link search-link">
+	                    	<a href="#bottom"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/magnifying-glass.png" /></a>
+	                    </li>
 	                    <li id="search" style="display: none;">
 
 			                <form action="<?php bloginfo('url'); ?>/search/" id="cse-search-box">

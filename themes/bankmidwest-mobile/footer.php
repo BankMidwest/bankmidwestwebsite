@@ -1,5 +1,5 @@
 		<div class="to-top">
-			<a href="#top">Top ^</a>
+			<a href="#top" name="bottom">Top ^</a>
 		</div>
 		<div id="social">
 			<ul class="connect-icons">

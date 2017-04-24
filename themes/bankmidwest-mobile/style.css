@@ -219,6 +219,10 @@ nav#ancillary ul li a {
 	padding: 2px 5px;
 }
 
+.top-nav-menu .search-link img {
+    height: 16px;
+}
+
 #ancillary li ul.subpages {
 	z-index: 9999;
 }
@@ -1117,10 +1121,14 @@ ul.connect-icons li {
     top: -13px;
 }
 .footer-top-links .right li#phone-icon a {
-	background: url("images/phone.png") no-repeat scroll left 0 transparent;
-	transition: none;
-	display: block;
-	height: 30px;
+    background: url(images/phone.png) no-repeat scroll left 0 transparent;
+    transition: none;
+    display: block;
+    height: 28px;
+    background-size: contain;
+    position: relative;
+    top: -22px;
+    left: 9px;
 }
 .footer-top-links .right ul li#social-email a:before {
 	content: none;
