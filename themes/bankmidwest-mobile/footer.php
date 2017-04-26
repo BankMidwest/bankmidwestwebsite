@@ -192,7 +192,16 @@
 				<a href="https://www.moneypass.com/atm-locator.html">
                     <img src="<?php echo site_url('/'); ?>wp-content/themes/bankmidwest/images/homepage/moneypass.png" />
                 </a>
-                <a href="http://itunes.apple.com/us/app/bank-midwest-mobile/id533868909?mt=8">
+                <?php
+                $url = "";
+                $iPadPos = strpos( $_SERVER['HTTP_USER_AGENT'], 'iPad' );
+                if ( $iPadPos !== false ) {
+                	$url = "https://itunes.apple.com/us/app/bank-midwest-for-ipad/id1226522293?mt=8";
+                } else {
+                	$url = "https://itunes.apple.com/us/app/bank-midwest/id1226510695?mt=8";
+                }
+                ?>
+                <a href="<?php echo $url; ?>">
                     <img src="<?php echo site_url('/'); ?>wp-content/themes/bankmidwest/images/homepage/appstore-apple.png" />
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.malauzai.DH16163">
