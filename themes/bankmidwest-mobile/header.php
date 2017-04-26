@@ -34,8 +34,8 @@
 	<title><?php wp_title(''); ?></title>
    	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); echo '?v=2'; ?>" />
 
-   	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+   	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
 	<?php if (function_exists('add_favicon_link')) add_favicon_link(); ?>
 	<!-- WP
@@ -46,7 +46,7 @@
 	<?php wp_enqueue_script('jquery'); ?>
 	<?php wp_head(); ?>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory');?>/inc/smartbanner/jquery.smartbanner.css" type="text/css" media="screen">
-	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/inc/smartbanner/jquery.smartbanner.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/inc/toggleLabel.js"></script></script>
 
