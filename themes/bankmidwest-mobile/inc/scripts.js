@@ -44,24 +44,24 @@ jQuery(document).ready(function() {
     
     function expand_ancillary_subMenu(e){
         e.preventDefault();
-        var $this = $(this);
+        var $this = jQuery(this);
         
         if($this.hasClass('active')){
-            $('.ancillary-menu-trigger').removeClass('active');
-            $('.mobile-sub-menus .sub-menu').hide();
+            jQuery('.ancillary-menu-trigger').removeClass('active');
+            jQuery('.mobile-sub-menus .sub-menu').hide();
             
         } else { 
            // remove any 'active' classes floating around
            // hide any other ancillary menus that are open
            // open the menu
-           $('.ancillary-menu-trigger').removeClass('active');
-           $('.mobile-sub-menus .sub-menu').hide();
+           jQuery('.ancillary-menu-trigger').removeClass('active');
+           jQuery('.mobile-sub-menus .sub-menu').hide();
            if($this.is('#about')){
-               $('.sub-menu.about').show();
+               jQuery('.sub-menu.about').show();
                $this.addClass('active');
            }
            if($this.is('#help')){
-               $('.sub-menu.help').show();
+               jQuery('.sub-menu.help').show();
                $this.addClass('active');
             }
         }
@@ -71,48 +71,48 @@ jQuery(document).ready(function() {
     //$(".ancillary-menu-trigger'").click(expand_ancillary_subMenu);
    
 	//uniform select styling
-	if (!$.browser.opera) {
-		$('select.select').each(function(){
-			var title = $(this).attr('title');
-			if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
-			$(this)
+	if (!jQuery.browser.opera) {
+		jQuery('select.select').each(function(){
+			var title = jQuery(this).attr('title');
+			if( jQuery('option:selected', this).val() != ''  ) title = jQuery('option:selected',this).text();
+			jQuery(this)
 			.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
 				.after('<span class="select">' + title + '</span>')
 				.change(function(){
-				val = $('option:selected',this).text();
-				$(this).next().text(val);
+				val = jQuery('option:selected',this).text();
+				jQuery(this).next().text(val);
 			})
 		});
 
 	};
 
 	//show/hide divs based on form option selection
-	$('#login-select').change(function() {
-		$('#login-content div').removeClass('active');
-		$('#login-content div.' + $(this).val()).addClass('active');
+	jQuery('#login-select').change(function() {
+		jQuery('#login-content div').removeClass('active');
+		jQuery('#login-content div.' + jQuery(this).val()).addClass('active');
 	});
 
-	$('.accordionButton').click(function(event){
+	jQuery('.accordionButton').click(function(event){
 		event.preventDefault(); 
-		$(this).parent('.expand').find('div.accordionContent').slideToggle(); 
+		jQuery(this).parent('.expand').find('div.accordionContent').slideToggle(); 
 	});
 
 
-	$('#nav > ul li a').click( function(event) {
+	jQuery('#nav > ul li a').click( function(event) {
 		
-		var id = $(this).attr('id');
+		var id = jQuery(this).attr('id');
 
 		event.preventDefault(); 
-		$(this).parents('li').siblings().find('a').removeClass('active');
-		$(this).toggleClass('active');
-		$('#nav .subpages ul.' + id).siblings().removeClass('active');
-		$('#nav .subpages ul.' + id).toggleClass('active');
+		jQuery(this).parents('li').siblings().find('a').removeClass('active');
+		jQuery(this).toggleClass('active');
+		jQuery('#nav .subpages ul.' + id).siblings().removeClass('active');
+		jQuery('#nav .subpages ul.' + id).toggleClass('active');
 	});
 
-	$('#nav ul li a.hidemenu').click( function(event){
+	jQuery('#nav ul li a.hidemenu').click( function(event){
 		event.preventDefault(); 
 
-		$('#nav .subpages ul, #nav > ul li a').removeClass('active');
+		jQuery('#nav .subpages ul, #nav > ul li a').removeClass('active');
 	});
 
 });
