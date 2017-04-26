@@ -67,7 +67,7 @@ jQuery(document).ready(function() {
         }
     }
     
-    $('body').on( 'click', '.ancillary-menu-trigger', expand_ancillary_subMenu );
+    jQuery('body').on( 'click', '.ancillary-menu-trigger', expand_ancillary_subMenu );
     //$(".ancillary-menu-trigger'").click(expand_ancillary_subMenu);
    
 	//uniform select styling
