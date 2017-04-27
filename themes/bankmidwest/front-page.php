@@ -300,8 +300,8 @@ $oldquery = $wp_query;
                                     <span>LinkedIn</span>
                                 </a>
                             </li>
-                            <li id="social-email"><a href="<?php echo get_permalink(823); ?>" title="Sign up for our Weekly Market Update"><span>Newsletter</span></a></li>
-                            <li id="social-rss"><a href="<?php bloginfo('rss2_url'); ?>" target="_blank"><span>RSS</span></a></li>
+                            <!--<li id="social-email"><a href="<?php echo get_permalink(823); ?>" title="Sign up for our Weekly Market Update"><span>Newsletter</span></a></li>
+                            <li id="social-rss"><a href="<?php bloginfo('rss2_url'); ?>" target="_blank"><span>RSS</span></a></li>-->
                         <?php } ?>
                         <?php if( is_front_page() ) { ?>
 

@@ -564,14 +564,16 @@ img.contact-alternate {
 	background:url(images/footer-bg.png) repeat-x center bottom #353535;
 	/*width:868px;
 	height:151px;
-	float:left;*/
-	color:#808080;
+	float:left;
+	color:#808080;*/
+	color: white;
 	padding:20px 0 0 40px;
 	font-size:13px;
 }
 
 #footer a {
-	color:#808080;
+	/*color:#808080;*/
+	color: white;
 }
 
 .footer-left {
@@ -2734,6 +2736,14 @@ body.page-template-page-bare-php #contactForm  {
 #footer #social {
 	float:left;
 	padding-left:18px;
+}
+
+.inner-hm-content #footer .container #social {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
 }
 
 #social ul li a,

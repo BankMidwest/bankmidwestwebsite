@@ -9,10 +9,16 @@
 
                     <h2>Contact Us!</h2>
                     <p class="contact-info">Customer Support<br />
-                        <strong>Phone:</strong> 888.902.5662<br />
-                        <strong>Monday-Friday:</strong> 7am - 7pm<br />
-                        <strong>Saturday:</strong> 8am - 12pm<br />
-                        <strong>Email:</strong> <a href="mailto:customersupport@bankmidwest.com">customersupport@bankmidwest.com</a>
+                        <?php if ( $footer == 'footer_invest' || $investFooter == true ) { ?>
+                            <strong>Phone:</strong> 800.662.8756<br />
+                            <strong>Monday-Friday:</strong> 7:30 a.m. - 4:30 p.m.<br />
+                            <strong>Email:</strong> <a href="mailto:wealthmanagement@bankmidwest.com">wealthmanagement@bankmidwest.com</a>
+                        <?php } else { ?>
+                            <strong>Phone:</strong> 888.902.5662<br />
+                            <strong>Monday-Friday:</strong> 7 a.m. - 7 p.m.<br />
+                            <strong>Saturday:</strong> 8 a.m. - 12 p.m.<br />
+                            <strong>Email:</strong> <a href="mailto:customersupport@bankmidwest.com">customersupport@bankmidwest.com</a>
+                        <?php }?>
                     </p>
                     <div id="copyright">
 
@@ -28,11 +34,11 @@
                     </p><p>
                     Representatives of a BD or IA are deemed to conduct business in a state to the extent that they would provide individualized responses to investor inquiries that involve (a) effecting, or attempting to effect, transactions in securities; or (b) rendering personalized investment advice for compensation.
                     </p><p>
-                    <strong>We are registered to offer securities in the following states:</strong> Alabama, Arkansas, Arizona, California, Colorado, Florida, Georgia, Iowa, Illinois, Indiana, Kansas, Kentucky, Louisiana, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, New Mexico, North Carolina, North Dakota, Oklahoma, South Carolina, South Dakota, Tennessee, Texas, Washington, and
+                    <!--<strong>We are registered to offer securities in the following states:</strong> Alabama, Arkansas, Arizona, California, Colorado, Florida, Georgia, Iowa, Illinois, Indiana, Kansas, Kentucky, Louisiana, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, New Mexico, North Carolina, North Dakota, Oklahoma, South Carolina, South Dakota, Tennessee, Texas, Washington, and
                     Wisconsin.
                     </p><p>
                     <strong>Fee-based advisory services are available only to residents of:</strong> Arizona, California, Illinois, Iowa, Kentucky, Minnesota, South Dakota, Texas, and Wisconsin.
-                    </p><p>
+                    </p>--><p>
                     <strong>We are licensed to sell insurance products in the following states of:</strong> Iowa, Minnesota, North Dakota, South Dakota, and Wisconsin. I acknowledge that I am a resident of one of the states listed above.
                     </p><p>
                     SII Investments, Inc.&reg; member <a href="http://www.finra.org/" target=“_blank" title="FINRA">FINRA</a>, <a href="http://www.sipc.org/" target=“_blank" title"SIP">SIPC</a> and a Registered Investment Advisor is not affiliated with Bank Midwest or Bank Midwest Wealth Management. Securities and advisory services offered through SII Investments Inc.&reg; are not insured by the FDIC or any other Federal Government Agency, not a deposit or other obligation of, or guaranteed by any bank or their affiliates, and are subject to risks including the possible loss of principal amount invested.</p>
@@ -121,6 +127,8 @@
 
                 <div id="social">
 
+                    <?php if ( $footer != 'footer_invest' || $investFooter != true ) { ?>
+
                         <a href="https://www.moneypass.com/atm-locator.html">
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/images/homepage/moneypass.png" />
                         </a>
@@ -130,6 +138,8 @@
                         <a href="https://play.google.com/store/apps/details?id=com.malauzai.DH16163">
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/images/homepage/appstore-google.png" />
                         </a>
+
+                    <?php } ?>
 
                     <ul class="connect-icons">
 
@@ -145,8 +155,8 @@
                                     <span>LinkedIn</span>
                                 </a>
                             </li>
-                            <li id="social-email"><a href="<?php echo get_permalink(823); ?>" title="Sign up for our Weekly Market Update"><span>Newsletter</span></a></li>
-                            <li id="social-rss"><a href="<?php bloginfo('rss2_url'); ?>" target="_blank"><span>RSS</span></a></li>
+                            <!--<li id="social-email"><a href="<?php echo get_permalink(823); ?>" title="Sign up for our Weekly Market Update"><span>Newsletter</span></a></li>
+                            <li id="social-rss"><a href="<?php bloginfo('rss2_url'); ?>" target="_blank"><span>RSS</span></a></li>-->
                         <?php } ?>
                         <?php if( is_front_page() ) { ?>
 
