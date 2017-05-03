@@ -1,4 +1,6 @@
-$(document).ready(function() {
+jQuery(document).ready(function(jQuery) {
+
+	var $=jQuery;
 
 	/* Home Slider */
 	$('#homeSlider').anythingSlider({
