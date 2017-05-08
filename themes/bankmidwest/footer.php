@@ -6,7 +6,7 @@
             <div class="container">
 
                 <div class="footer-left">
-
+                    <?php $footer= slt_cf_field_value('footer_options'); ?>
                     <h2>Contact Us!</h2>
                     <p class="contact-info">Customer Support<br />
                         <?php if ( $footer == 'footer_invest' || $investFooter == true ) { ?>
@@ -22,7 +22,7 @@
                     </p>
                     <div id="copyright">
 
-                <?php $footer= slt_cf_field_value('footer_options');
+                <?php 
 
                 if ( $footer == 'footer_invest' || $investFooter == true ) { ?>
 
