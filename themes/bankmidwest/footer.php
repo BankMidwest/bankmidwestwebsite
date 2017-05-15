@@ -127,7 +127,8 @@
 
                 <div id="social" class="<?php echo $footer; ?>" >
 
-                    <?php if ( $footer !== 'footer_invest' || $investFooter != true ) { ?>
+                    <?php if ( $footer == 'footer_invest' || $investFooter == true ) { ?>
+                    <?php } else { ?>
 
                         <a href="https://www.moneypass.com/atm-locator.html">
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/images/homepage/moneypass.png" />
