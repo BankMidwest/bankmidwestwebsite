@@ -125,7 +125,7 @@
 
                     </div><!--.footer-left-->
 
-                <div id="social">
+                <div id="social" class="<?php echo $footer; ?>" >
 
                     <?php if ( $footer != 'footer_invest' || $investFooter != true ) { ?>
 
