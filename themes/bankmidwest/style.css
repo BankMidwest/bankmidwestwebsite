@@ -859,6 +859,7 @@ a.sidebtn:hover { background-color: #fff; color: #511025;}
 #inner-content ol { margin: 0 0 12px 12px; /*padding: 0 0 0 12px;*/ }
 /* RR */
 .blog #inner-content ul, .single-post #inner-content ul, .category #inner-content ul { list-style-type: disc; /*padding: 25px;*/ margin: 0px;}
+.single-post #inner-content ul { padding: 25px; }
 #inner-content ol { list-style-type: decimal; }
 #inner-content ul.gform_fields { margin-left: 0; }
 #inner-content table { margin-bottom: 12px; width: 100%; }
