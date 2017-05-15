@@ -188,7 +188,7 @@
 
 			</div><!--.footer-left-->
 			<?php if ( $footer != 'footer_invest') : ?>
-				<div class="footer-right">
+				<div class="footer-right <?php echo $footer; ?>" >
 					<a href="https://www.moneypass.com/atm-locator.html">
 	                    <img src="<?php echo site_url('/'); ?>wp-content/themes/bankmidwest/images/homepage/moneypass.png" />
 	                </a>
