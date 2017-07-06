@@ -401,6 +401,7 @@ $oldquery = $wp_query;
             var ifrs = document.getElementsByTagName('iframe');
             var ifr = ifrs[0];
             var ifrSrc = ifr.src;
+            console.log(ifrSrc);
             if(!ifrSrc) {
                 ifr.src="http://staging.bankmidwest.com/10510-2/";
             }
