@@ -398,6 +398,14 @@ $oldquery = $wp_query;
                 }
             }
             // END offsite link notification
+            var ifrs = document.getElementsByTagName('iframe');
+            var ifr = ifrs[0];
+            var ifrSrc = ifr.src;
+            console.log(ifrSrc);
+            if(!ifrSrc) {
+                ifr.src="http://staging.bankmidwest.com/10510-2/";
+            }
+
         });
     </script>
 
@@ -432,41 +440,7 @@ if (is_page('search')) { ?>
 </script>
 <?php } ?>
 
-<?php
-if ( is_page( 8170 ) ) 
-{
-?>
 
-    <script type="text/javascript">
-        var cdCampaignKey = 'CMP-01228-M3G4R6';
-    </script>
-
-<?php
-}
-
-global $post;
-
-$fullPages = getPageTemplateId( 'template-no-sidebar' );
-
-if( !in_array( $post->ID, $fullPages ) )
-{
-?>
-
-    <script type="text/javascript">
-      var cdJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
-      document.write(unescape("%3Cscript src='" + cdJsHost + "analytics.clickdimensions.com/ts.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-
-    <script type="text/javascript">
-      var cdAnalytics = new clickdimensions.Analytics('analytics.clickdimensions.com');
-      cdAnalytics.setAccountKey('aQFJ5d8fu9Ui8XlIvqg0KQ');
-      cdAnalytics.setDomain('bankmidwest.com');
-      cdAnalytics.trackPage();
-    </script>
-
-<?php
-}
-?>
 
 </body>
 </html>

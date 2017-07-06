@@ -312,7 +312,6 @@ if (is_page('search')) { ?>
 
 
 
-
 </body>
 </html>
 <!-- END footer.php -->
